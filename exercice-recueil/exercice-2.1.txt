@@ -1,0 +1,21 @@
+Exercice 2.1 Identificateurs C++
+
+Pour chacun des cas ci-dessous, indiquez s'il s'agit d'un identificateur C++ légal ou non.
+Justifiez votre réponse si celle-ci est "Non".
+
+
+1) 007                  NON
+2) james_bond_007       OUI
+3) james_bond__007      OUI
+4) james bond           NON
+5) sOs                  OUI
+6) SOS                  OUI
+7) _007                 OUI
+8) __007                OUI
+9) _007_                OUI
+10) bond-007            NON
+11) tom&jerry           NON
+12) int                 NON
+13) INT                 OUI, mais fortement déconseiller
+14) André               NON, car on ne peut pas utiliser les lettres accentuées
+15) _                   OUI, car commence car souligné mais aussi déconseillé
