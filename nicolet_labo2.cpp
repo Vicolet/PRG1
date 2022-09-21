@@ -15,8 +15,7 @@ int main() {
    annee_naissance = 2022 - age;
 
    std::cout << "Bonjour " << prenom << "," << std::endl;
-   std::cout << "Vous avez " << age
-             << " ans et vous etes ne en " << annee_naissance << "."
-             << std::endl;
+   std::cout << "Vous avez " << age << " ans et vous etes ne en " << annee_naissance << "." << std::endl;
+
    return 0;
 }
