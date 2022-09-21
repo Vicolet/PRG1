@@ -18,4 +18,3 @@ Justifiez votre réponse si celle-ci est "Non".
 12) int                 NON, car c'est un identificateur.
 13) INT                 OUI, mais fortement déconseillé.
 14) André               NON, car on ne peut pas utiliser les lettres accentuées.
-15) _                   OUI, car commence par souligné, mais aussi déconseillé.
