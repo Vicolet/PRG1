@@ -1,3 +1,5 @@
 # ninja log v5
 1	1144	6853668832689974	CMakeFiles/PRG1.dir/main.cpp.obj	fb50e5550d41e44
 1148	1351	6853668834563198	PRG1.exe	a18aab735923a2fc
+0	616	6854521996067830	CMakeFiles/PRG1.dir/nicolet_labo1.cpp.obj	d5f0dc1044965fa6
+4	620	6854521996067830	CMakeFiles/PRG1.dir/nicolet_labo2.cpp.obj	842fa96ae2969892
