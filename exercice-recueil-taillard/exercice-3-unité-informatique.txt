@@ -1,0 +1,20 @@
+Unités informatiques
+
+1. Quel est le nombre de valeurs différentes pouvant être représentées avec 10 bits ?
+2^10 = 1024 valeurs différentes
+
+2. Les informaticiens ont choisi comme unité pour la taille mémoire le kilo octet. Étonnamment, 1 kilo octet ne
+représente pas exactement 1000 octets, mais 1024. Pourquoi avoir choisi une telle convention ?
+
+
+3. Sachant qu’un méga 1 M = 1k x 1k, quelle est la taille du méga octet utilisé ? Combien de bits faut-il pour
+représenter toutes les valeurs possibles allant jusqu’à 1 Méga informatique ?
+
+
+4. Mêmes questions pour Giga 1 G = 1 M x 1 k. Quelle est le nombre de bits stockés dans 1 Go de disque dur
+(1 Giga octet) ?
+
+
+5. On dispose d’une mémoire RAM ayant les caractéristiques suivantes : bus d’adresses de 27 bits, bus de
+données de 32 bits. Quelle est la capacité en octets (ou kilo, méga, giga) de cette mémoire ?
+
