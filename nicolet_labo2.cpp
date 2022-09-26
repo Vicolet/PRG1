@@ -11,6 +11,8 @@
 #include <iostream>
 #include <string>
 
+const int CETTE_ANNEE = 2022;
+
 int main() {
    std::string prenom;
    int age;
@@ -22,7 +24,7 @@ int main() {
    std::cout << "Entrer votre age: ";
    std::cin >> age;
 
-   annee_naissance = 2022 - age;
+   annee_naissance = CETTE_ANNEE - age;
 
    std::cout << "Bonjour " << prenom << "," << std::endl;
    std::cout << "Vous avez " << age << " ans et vous etes ne en " << annee_naissance << "." << std::endl;
