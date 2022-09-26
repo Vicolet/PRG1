@@ -1,5 +1,5 @@
-2. Additions binaires Effectuer en binaire les additions suivantes.
-   Traduire les opérandes en binaire (sur 8 bits)
+Additions binaires Effectuer en binaire les additions suivantes.
+Traduire les opérandes en binaire (sur 8 bits)
 
 1. 1 + 51 = 52      00000001
                    +00110011
