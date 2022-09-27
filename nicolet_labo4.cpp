@@ -47,4 +47,6 @@ int main() {
              << km2 << "km, " << m2 << "m, " << cm2 << "cm, " << mm2 << "mm font : \n"
              << kmf << "km, " << mf << "m, " << cmf << "cm, " << mmf << "mm" << std::endl;
 
+   return 0;
+
 }

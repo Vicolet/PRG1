@@ -14,6 +14,7 @@
 const int CETTE_ANNEE = 2022;
 
 int main() {
+
    std::string prenom;
    int age;
    int annee_naissance;
@@ -30,4 +31,5 @@ int main() {
    std::cout << "Vous avez " << age << " ans et vous etes ne en " << annee_naissance << "." << std::endl;
 
    return 0;
+
 }

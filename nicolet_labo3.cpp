@@ -17,6 +17,7 @@ const int MINUTE_PAR_HEURE = 60;
 const int SECONDE_PAR_MINUTE = 60;
 
 int main() {
+
    int userValor, seconde, minute, heure, jour, semaine;
 
    std::cout << "Introduisez un nombre de seconde: ";
@@ -42,4 +43,5 @@ int main() {
              << std::endl;
 
    return 0;
+
 }
