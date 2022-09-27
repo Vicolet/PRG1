@@ -11,30 +11,38 @@
 
 #include <iostream>
 
+const int MM_PAR_CM = 10;
+const int CM_PAR_M = 100;
+const int M_PAR_KM = 1000;
+
 int main() {
-   int firstUserDistance;
+
+   int km1, m1, cm1, mm1;
+   int km2, m2, cm2, mm2;
+   int km3, m3, cm3, mm3;
+   int kmf, mf, cmf, mmf;
+
    std::cout << "Entrer une premiere distance : " << std::endl;
-   std::cin >> firstUserDistance;
+   std::cin >> km1 >> m1 >> cm1 >> mm1;
 
-   int secondUserDistance;
    std::cout << "Entrer une seconde distance : " << std::endl;
-   std::cin >> secondUserDistance;
+   std::cin >> km2 >> m2 >> cm2 >> mm2;
 
-   int finalDistance;
-   finalDistance = firstUserDistance + secondUserDistance;
+   km3 = km1 + km2;
+   m3 = m1 + m2;
+   cm3 = cm1 + cm2;
+   mm3 = mm1 + mm2;
 
-   std::cout << km << "km, " << m << "m, " << cm << "cm, " << mm << "mm + "
+   mmf = mm3 % MM_PAR_CM;
+   cm3 += mm3 / MM_PAR_CM;
+   cmf = cm3 % CM_PAR_M;
+   m3 += cm3 / CM_PAR_M;
+   mf = m3 % M_PAR_KM;
+   km3 += m3 / M_PAR_KM;
+   kmf = km3;
 
-   Si l’utilisateur introduit
-   2 34 56 7 et 9 87 65 4
-   Le programme devra répondre
-   2km, 34m, 56cm, 7mm + 9km, 87m, 65cm, 4mm font :
-   11 km, 122 m, 22 cm, 1 mm
-
-
-
-
-
-
+   std::cout << km1 << "km, " << m1 << "m, " << cm1 << "cm, " << mm1 << "mm + "
+             << km2 << "km, " << m2 << "m, " << cm2 << "cm, " << mm2 << "mm font : \n"
+             << kmf << "km, " << mf << "m, " << cmf << "cm, " << mmf << "mm" << std::endl;
 
 }
