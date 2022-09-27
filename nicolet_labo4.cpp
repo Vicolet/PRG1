@@ -17,22 +17,24 @@ const int M_PAR_KM = 1000;
 
 int main() {
 
-   int km1, m1, cm1, mm1;
-   int km2, m2, cm2, mm2;
-   int km3, m3, cm3, mm3;
-   int kmf, mf, cmf, mmf;
+   int km1, m1, cm1, mm1; // donne les valeurs de la première distance utilisateur.
+   int km2, m2, cm2, mm2; // donne les valeurs de la seconde distance utilisateur.
+   int km3, m3, cm3, mm3; // permet garder en mémoire l'addition de la distance une et deux.
+   int kmf, mf, cmf, mmf; // donne la valeur de la distance final après calcul.
 
-   std::cout << "Entrer une premiere distance : " << std::endl;
+   std::cout << "Entrer une premiere distance (format km m cm mm) : " << std::endl;
    std::cin >> km1 >> m1 >> cm1 >> mm1;
 
-   std::cout << "Entrer une seconde distance : " << std::endl;
+   std::cout << "Entrer une seconde distance (format km m cm mm) : " << std::endl;
    std::cin >> km2 >> m2 >> cm2 >> mm2;
 
+   // mise en mémoire de l'addition des deux entrées utilisateur
    km3 = km1 + km2;
    m3 = m1 + m2;
    cm3 = cm1 + cm2;
    mm3 = mm1 + mm2;
 
+   // calcul la distance final avec les conversions d'unités
    mmf = mm3 % MM_PAR_CM;
    cm3 += mm3 / MM_PAR_CM;
    cmf = cm3 % CM_PAR_M;
