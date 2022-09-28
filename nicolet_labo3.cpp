@@ -18,23 +18,23 @@ const int SECONDE_PAR_MINUTE = 60;
 
 int main() {
 
-   int userValor, seconde, minute, heure, jour, semaine;
+   int valeurUtilisateur, seconde, minute, heure, jour, semaine;
 
    std::cout << "Introduisez un nombre de seconde: ";
-   std::cin >> userValor;
+   std::cin >> valeurUtilisateur;
    std::cout << std::endl;
 
-   minute = userValor / SECONDE_PAR_MINUTE;
+   minute = valeurUtilisateur / SECONDE_PAR_MINUTE;
    heure = minute / MINUTE_PAR_HEURE;
    jour = heure / HEURE_PAR_JOUR;
    semaine = jour / JOUR_PAR_SEMAINE;
 
-   seconde = userValor % SECONDE_PAR_MINUTE;
+   seconde = valeurUtilisateur % SECONDE_PAR_MINUTE;
    minute = minute % MINUTE_PAR_HEURE;
    heure = heure % HEURE_PAR_JOUR;
    jour = jour % JOUR_PAR_SEMAINE;
 
-   std::cout << userValor << "s = "
+   std::cout << valeurUtilisateur << "s = "
              << semaine << "semaine "
              << jour << "jours "
              << heure << "heures "
