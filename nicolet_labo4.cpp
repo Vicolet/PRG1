@@ -28,7 +28,7 @@ int main() {
    std::cout << "Entrer une seconde distance (format km m cm mm) : " << std::endl;
    std::cin >> km2 >> m2 >> cm2 >> mm2;
 
-   // mise en mémoire de l'addition des deux entrées utilisateur
+   // mise en mémoire de l'addition des deux entrées utilisateur dans les 3e distance
    km3 = km1 + km2;
    m3 = m1 + m2;
    cm3 = cm1 + cm2;
