@@ -1,0 +1,22 @@
+Promotions numériques Représentez les promotions numériques qui surviennent lors de l’évaluation des expressions
+ci-dessous ; on suppose avoir déclaré :
+
+char c;
+short sh;
+int i;
+float f;
+double d;
+
+1. c * sh - f / i + d;
+
+   c * sh → les deux sont cast en int
+   f / i  → "i" est cast en float
+
+2. c * (sh - f) / i + d;
+
+
+3. c * sh - f - i + d;
+
+
+4. c + sh * f / i + d;
+
