@@ -1,19 +1,16 @@
 Constantes Indiquer si les constantes ci-après sont correctes ou non. Si non, précisez pourquoi.
 
-1.  1.5         correcte → double
-2.  1E3         correcte → double
-3.  12u         correcte → unsigned int
-4.  12.0u       non correcte, les variables doubles sont toujours signés.
-5.  1L          correcte → long
-6.  1.0L        correcte → long double
-7.  .5          correcte → double
-8.  5.          correcte → double
-9.  1000000000  correcte → int
-10. 0x33        correcte → int
-11. 0xefg       non correcte, "g" n'est pas hexadecimal.
-12. 0xef        correcte → int
-13. 0xEF        correcte → int
-14. 0x0.2       non correcte, pas d'écriture hexadecimal pour des doubles.
-15. 08          non correcte, 08 n'est pas représentable en octal.
-16. 07          correcte → int
-17. 0b10        correcte → int
+1.  'a'                 correcte → char
+2.  'A'                 correcte → char
+3.  'ab'                non correcte, multi-caractère n'est pas admis.
+4.  '\x41'              correcte → char hexadecimal
+5.  '\041'              correcte → char octal
+6.  '\0x41'             non correcte, hexadecimal ne s'écrit pas comme ça en char.
+7.  '\n'                correcte → char saut de ligne
+8.  '\w'                non correcte, la constante '\w' n'est pas interprété erreur de compilation.
+9.  '\t'                correcte → char tabulation
+10. '\xp2'              non correcte, "p" n'est pas hexadecimal.
+11. "abcdef"            correcte, pas une constante char, mais string.
+12. "\abc\ndef"         correcte
+13. "\'\"\\"            correcte →
+14. "Hello \world !\n"  non correcte, \w va donner une erreur de config.
