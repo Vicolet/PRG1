@@ -8,15 +8,27 @@ float f;
 double d;
 
 1. c * sh - f / i + d;
-
-   c * sh → les deux sont cast en int
-   f / i  → "i" est cast en float
+    c * sh → les deux sont cast en int  puis en float.
+    f / i  → "i" est cast en float.
+    c * sh - f / i → la réponse de ce calcul est cast de float en double.
+    réponse finale en double
 
 2. c * (sh - f) / i + d;
-
+    sh - f → "sh" est cast en int puis sen float.
+    c      → "c" est cast en int puis en float.
+    i      → "i" est cast en float.
+    c * (sh - f) / i → la réponse de ce calcul est cast de float en double.
+    réponse finale en double
 
 3. c * sh - f - i + d;
-
+    c * sh → les deux sont cast en int puis en float
+    i      → "i" est cast en int puis en float.
+    c * sh - f - i → la réponse de ce calcul est cast de float en double.
+    réponse finale en double
 
 4. c + sh * f / i + d;
-
+    sh * f → "sh" est cast en int puis en float.
+    i      → est cast en float.
+    c      → est cast en int puis en float.
+    c + sh * f / i → cast en double
+    réponse finale en double
