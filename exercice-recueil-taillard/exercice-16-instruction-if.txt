@@ -1,0 +1,32 @@
+Instruction if Avec la déclaration :int i = 8; Indiquer pour chaque groupe d’instructions ci-dessous s’il
+permet effectivement d’afficher que i vaut 8. Si ce n’est pas le cas, expliquer la nature de l’erreur.
+
+(a) if (!(i < 8) && !(i > 8)) then cout << "i vaut 8\n";
+Faux, à cause du "then".
+
+(b) if(!(i < 8) && !(i > 8)) cout << "i vaut 8"; cout << endl;
+Vrai
+
+(c) if !(i < 8) && !(i > 8) cout << "i vaut 8\n";
+Faux, il manque les parenthèses après le "if".
+
+(d) if(!(i < 8) && !(i > 8)) cout << "i vaut 8\n";
+Vrai
+
+(e) if (i = 8) cout << "i vaut 8\n";
+Faux, on fait une affectation donc "i" sera toujours égale à 8.
+
+(f) if (i & (1 << 3)) cout << "i vaut 8\n";
+Faux
+
+(g) if (i ˆ 8) cout << "i vaut 8\n";
+Faux
+
+(h) if (i - 8) cout << "i vaut 8\n";
+Faux
+
+(i) if (i == 1 << 3) cout << "i vaut 8\n";
+Faux
+
+(j) if (!((i < 8) || (i > 8))) cout << "i vaut 8\n";
+
