@@ -17,24 +17,13 @@
 int main() {
 
    int x1, y1, x2, y2, x3, y3, x4, y4;
+   char poubelle;
 
-   std::cout << "Entrer 4 coordonnees sous forme (x,y) exemple -> 9 1" << std::endl;
-
-   std::cout << "premiere Coordonnees : ";
-   std::cin >> x1 >> y1;
-   std::cout << std::endl;
-
-   std::cout << "deuxieme Coordonnees : ";
-   std::cin >> x2 >> y2;
-   std::cout << std::endl;
-
-   std::cout << "troisieme Coordonnees : ";
-   std::cin >> x3 >> y3;
-   std::cout << std::endl;
-
-   std::cout << "quatrieme Coordonnees : ";
-   std::cin >> x4 >> y4;
-   std::cout << std::endl;
+   std::cout << "Entrer 4 coordonnees sous forme (x1,y1)(x2,y2)(x3,y3)(x4,y4) : " << std::endl;
+   std::cin >> poubelle >> x1 >> poubelle >> y1 >> poubelle
+            >> poubelle >> x2 >> poubelle >> y2 >> poubelle
+            >> poubelle >> x3 >> poubelle >> y3 >> poubelle
+            >> poubelle >> x4 >> poubelle >> y4 >> poubelle;
 
 }
 
