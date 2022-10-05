@@ -25,5 +25,7 @@ int main() {
             >> poubelle >> x3 >> poubelle >> y3 >> poubelle
             >> poubelle >> x4 >> poubelle >> y4 >> poubelle;
 
+
+
 }
 

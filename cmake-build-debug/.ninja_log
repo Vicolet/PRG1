@@ -1,18 +1,4 @@
 # ninja log v5
-1	1144	6853668832689974	CMakeFiles/PRG1.dir/main.cpp.obj	fb50e5550d41e44
-17	1419	6854647238214511	CMakeFiles/PRG1.dir/nicolet_labo3.cpp.obj	a60d2f8eba697f12
-1319	1529	6866754650810275	PRG1.exe	6bfe267e562f8feb
-9	1472	6860683083716935	CMakeFiles/PRG1.dir/nicolet_labo5.cpp.obj	ddd8ed66e068491
-0	616	6854521996067830	CMakeFiles/PRG1.dir/nicolet_labo1.cpp.obj	d5f0dc1044965fa6
-1	1581	6858949900850209	CMakeFiles/PRG1.dir/nicolet_labo2.cpp.obj	842fa96ae2969892
-3	355	6866761388851737	build.ninja	b6cbf2e59a6e943
-13	1003	6859716376290901	CMakeFiles/PRG1.dir/nicolet_labo4.cpp.obj	c0510981a7182082
-1	1317	6866754648792836	CMakeFiles/PRG1.dir/nicolet_labo6.cpp.obj	9d6546a72200ecab
-4	524	6865787957849934	CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj	7285cb741afa8ab9
-3	522	6866661804142243	CMakeFiles/PRG1.dir/BS-code.cpp.obj	75759472acfa747b
-7	1213	6866754523380176	CMakeFiles/PRG1.dir/nicolet_labo7.cpp.obj	3e78e3be94deaf33
-3	444	6866761388851737	build.ninja	b6cbf2e59a6e943
-1	1028	6866761400860545	CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj	7285cb741afa8ab9
-1031	1303	6866761403535273	PRG1.exe	5413a4e2c1c3b7ab
-8	1003	6866769108602267	CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj	7285cb741afa8ab9
 1004	1193	6866769110414631	PRG1.exe	5413a4e2c1c3b7ab
+3	444	6866963602383585	build.ninja	b6cbf2e59a6e943
+8	1003	6866769108602267	CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj	7285cb741afa8ab9
