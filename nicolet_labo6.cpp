@@ -16,15 +16,16 @@ int const MINUTE_PAR_JOUR = 1440;
 int main() {
 
    int heureDepart, heureArrivee, minuteDepart, minuteArrivee;
+   char poubelleDepart, poubelleArrivee;
 
    std::cout << "entre une heure et une minute de depart : " << std::endl;
-   std::cin >> heureDepart >> minuteDepart;
+   std::cin >> heureDepart >> poubelleDepart >> minuteDepart;
 
    // Transforme les heures en minute
    minuteDepart += heureDepart * MINUTE_PAR_HEURE;
 
    std::cout << "entre une heure et une minute d'arrivee : " << std::endl;
-   std::cin >> heureArrivee >> minuteArrivee;
+   std::cin >> heureArrivee >> poubelleArrivee >> minuteArrivee;
 
    // Transforme les heures en minute
    minuteArrivee += heureArrivee * MINUTE_PAR_HEURE;
