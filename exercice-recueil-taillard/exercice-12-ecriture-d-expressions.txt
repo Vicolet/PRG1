@@ -1,0 +1,13 @@
+Écriture d’expressions On suppose avoir déclaré :
+
+double x, y;
+int a, b, c;
+
+(a) Écrire une expression retournant la valeur 1/3 * x^2 * y
+
+
+(b) Écrire une expression permettant d’inverser le 5e bit de a.
+
+
+(c) Écrire une expression qui retourne la valeur de (a+1)·(b-1) tout en décrémentant b d’une unité.
+
