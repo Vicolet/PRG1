@@ -34,3 +34,9 @@ a % 7 == 0 || a % 11 == 0
 
 (k) a, b et c sont dans un ordre strictement croissant
 a < b && b < c
+
+(l) le 5e bit de a est à 1
+a & 1 << 4
+
+(m) a/b donne un résultat plus grand que c
+b != 0 && (a / b) > c
