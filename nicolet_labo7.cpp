@@ -14,7 +14,7 @@ int main() {
 
    char uniteTemp;
    int temperature;
-   int converseTemp;
+   int converseTemp, converseMod;
 
    std::cout << "Transformation Fahrenheit <-> Degre Celsius" << std::endl;
    std::cout << "Introduire le sens de la transformation (vers C ou F) : ";
@@ -25,10 +25,15 @@ int main() {
       std::cout << "Nombre de Fahrenheit: ";
       std::cin >> temperature;
       std::cout << std::endl;
-      if (((temperature - 32) * 5 % 9) >= 5) {
-         converseTemp = ((temperature - 32) * 5 / 9) + 1;
-      } else {
-         converseTemp = ((temperature - 32) * 5 / 9);
+      converseTemp = (temperature - 32) * 5 / 9;
+      converseMod = (temperature - 32) * 5 % 9;
+      if (converseMod < 0) {
+         converseMod *= -1;
+      }
+      if (converseMod >= 5 && converseTemp >= 0) {
+         converseTemp += 1;
+      } else if (converseTemp < 0 && converseMod >= 5) {
+         converseTemp -= 1;
       }
       std::cout << temperature << " Fahrenheit font " << converseTemp << " deg.Celsius" << std::endl;
 
@@ -37,15 +42,18 @@ int main() {
       std::cin >> temperature;
       std::cout << std::endl;
       converseTemp = temperature * 9 / 5 + 32;
-      if ((temperature * 9 % 5) <= 5) {
-         converseTemp = temperature * 9 / 5 + 32;
-      } else {
-         converseTemp = temperature * 9 / 5 + 32 + 1;
+      converseMod = (temperature * 9) % 5;
+      if (converseMod < 0) {
+         converseMod *= -1;
+      }
+      if (converseMod <= 3 && converseTemp >= 0) {
+         converseTemp += 1;
+      } else if (converseMod <= 3 && converseTemp < 0) {
+         converseTemp -= 1;
       }
       std::cout << temperature << " deg.Celsius font " << converseTemp << " Fahrenheit" << std::endl;
-
    }
-// c -27 = -33
+
    return 0;
 
 }
