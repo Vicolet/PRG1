@@ -12,18 +12,26 @@ Opérateurs booléens Qu’imprime le programme suivant :
     q = n++ > p || p++ != 3; /* cas 1 */
     cout << "A : n = " << n << " p = " << p << " q = " << q << "\n";
 
+    // A : n = 6 p = 2 q  = TRUE ou 1
+
     n = 5;
     p = 2;
     q = n++ < p || p++ != 3; /* cas 2 */
     cout << "B : n = " << n << " p = " << p << " q = " << q << "\n";
+
+    // B : n = 6 p = 3 q  = TRUE ou 1
 
     n = 5;
     p = 2;
     q = ++n == 3 && ++p == 3; /* cas 3 */
     cout << "C : n = " << n << " p = " << p << " q = " << q << "\n";
 
+    // C : n = 6 p = 2 q  = FALSE ou 0
+
     n = 5;
     p = 2;
     q = ++n == 6 && ++p == 3; /* cas 4 */
     cout << "D : n = " << n << " p = " << p << " q = " << q << "\n";
+
+    // D : n = 6 p = 3 q = TRUE ou 1
  }
