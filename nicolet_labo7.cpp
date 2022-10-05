@@ -37,10 +37,15 @@ int main() {
       std::cin >> temperature;
       std::cout << std::endl;
       converseTemp = temperature * 9 / 5 + 32;
+      if ((temperature * 9 % 5) <= 5) {
+         converseTemp = temperature * 9 / 5 + 32;
+      } else {
+         converseTemp = temperature * 9 / 5 + 32 + 1;
+      }
       std::cout << temperature << " deg.Celsius font " << converseTemp << " Fahrenheit" << std::endl;
 
    }
-
+// c -27 = -33
    return 0;
 
 }
