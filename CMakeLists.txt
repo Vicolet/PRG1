@@ -3,5 +3,5 @@ project(PRG1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(PRG1 nicolet_labo7.cpp)
+add_executable(PRG1 BS-code.cpp)
 
