@@ -10,28 +10,35 @@
 */
 
 #include <iostream>
+#include <iomanip>
+
+const double PRECISION = 1.0E-10;
+
 
 int main() {
-   /*
-    * Prendre comme première approximation r = x/2
-    * Si la valeur de r · r est trop éloignée de x, prendre comme nouvelle approximation la
-    * moyenne de r et x/r
-    * Recommencer jusqu’à ce que la valeur de r soit satisfaisante
-    */
-   double valeurUtilisateur = 0.0;
-   double racine = 0.0;
-   const double precision = 1.0E-10;
+
+   std::cout << std::setprecision(10);
+
+   double valeurUtilisateur, approximation = 0.0;
+   double division = 2.0;
+   double precision = 1.0;
+   int iterationHeron = 0;
+
    std::cout << "Enter un nombre dont vous voulez connaitre la racine carree : ";
    std::cin >> valeurUtilisateur;
    std::cout << std::endl;
 
-   racine = valeurUtilisateur / 2.0;
-
-   while (racine * racine - valeurUtilisateur > precision){
-
-
+   while (precision > PRECISION || precision < -PRECISION) {
+      iterationHeron++;
+      approximation = valeurUtilisateur / division;
+      division = (approximation + division) / 2;
+      precision = approximation - division;
    }
 
-   return 0;
+   double racineCarre = approximation;
 
+   std::cout << "il y a " << iterationHeron << " iterations." << std::endl;
+   std::cout << "La racine de " << valeurUtilisateur << " est " << racineCarre << std::endl;
+
+   return 0;
 }

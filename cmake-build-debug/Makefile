@@ -128,29 +128,29 @@ PRG1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/build
 .PHONY : PRG1/fast
 
-BS-code.obj: BS-code.cpp.obj
-.PHONY : BS-code.obj
+nicolet_labo10.obj: nicolet_labo10.cpp.obj
+.PHONY : nicolet_labo10.obj
 
 # target to build an object file
-BS-code.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.obj
-.PHONY : BS-code.cpp.obj
+nicolet_labo10.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj
+.PHONY : nicolet_labo10.cpp.obj
 
-BS-code.i: BS-code.cpp.i
-.PHONY : BS-code.i
+nicolet_labo10.i: nicolet_labo10.cpp.i
+.PHONY : nicolet_labo10.i
 
 # target to preprocess a source file
-BS-code.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.i
-.PHONY : BS-code.cpp.i
+nicolet_labo10.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/nicolet_labo10.cpp.i
+.PHONY : nicolet_labo10.cpp.i
 
-BS-code.s: BS-code.cpp.s
-.PHONY : BS-code.s
+nicolet_labo10.s: nicolet_labo10.cpp.s
+.PHONY : nicolet_labo10.s
 
 # target to generate assembly for a file
-BS-code.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.s
-.PHONY : BS-code.cpp.s
+nicolet_labo10.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/nicolet_labo10.cpp.s
+.PHONY : nicolet_labo10.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PRG1
-	@echo ... BS-code.obj
-	@echo ... BS-code.i
-	@echo ... BS-code.s
+	@echo ... nicolet_labo10.obj
+	@echo ... nicolet_labo10.i
+	@echo ... nicolet_labo10.s
 .PHONY : help
 
 

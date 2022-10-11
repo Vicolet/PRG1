@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/PRG1.dir/BS-code.cpp.obj"
-  "CMakeFiles/PRG1.dir/BS-code.cpp.obj.d"
+  "CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj"
+  "CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj.d"
   "PRG1.exe"
   "PRG1.exe.manifest"
   "PRG1.pdb"

@@ -68,28 +68,28 @@ include CMakeFiles/PRG1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/PRG1.dir/flags.make
 
-CMakeFiles/PRG1.dir/BS-code.cpp.obj: CMakeFiles/PRG1.dir/flags.make
-CMakeFiles/PRG1.dir/BS-code.cpp.obj: ../BS-code.cpp
-CMakeFiles/PRG1.dir/BS-code.cpp.obj: CMakeFiles/PRG1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PRG1.dir/BS-code.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PRG1.dir/BS-code.cpp.obj -MF CMakeFiles\PRG1.dir\BS-code.cpp.obj.d -o CMakeFiles\PRG1.dir\BS-code.cpp.obj -c C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\BS-code.cpp
+CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj: CMakeFiles/PRG1.dir/flags.make
+CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj: ../nicolet_labo10.cpp
+CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj: CMakeFiles/PRG1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj -MF CMakeFiles\PRG1.dir\nicolet_labo10.cpp.obj.d -o CMakeFiles\PRG1.dir\nicolet_labo10.cpp.obj -c C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\nicolet_labo10.cpp
 
-CMakeFiles/PRG1.dir/BS-code.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PRG1.dir/BS-code.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\BS-code.cpp > CMakeFiles\PRG1.dir\BS-code.cpp.i
+CMakeFiles/PRG1.dir/nicolet_labo10.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PRG1.dir/nicolet_labo10.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\nicolet_labo10.cpp > CMakeFiles\PRG1.dir\nicolet_labo10.cpp.i
 
-CMakeFiles/PRG1.dir/BS-code.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PRG1.dir/BS-code.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\BS-code.cpp -o CMakeFiles\PRG1.dir\BS-code.cpp.s
+CMakeFiles/PRG1.dir/nicolet_labo10.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PRG1.dir/nicolet_labo10.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\nicolet_labo10.cpp -o CMakeFiles\PRG1.dir\nicolet_labo10.cpp.s
 
 # Object files for target PRG1
 PRG1_OBJECTS = \
-"CMakeFiles/PRG1.dir/BS-code.cpp.obj"
+"CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj"
 
 # External object files for target PRG1
 PRG1_EXTERNAL_OBJECTS =
 
-PRG1.exe: CMakeFiles/PRG1.dir/BS-code.cpp.obj
+PRG1.exe: CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj
 PRG1.exe: CMakeFiles/PRG1.dir/build.make
 PRG1.exe: CMakeFiles/PRG1.dir/linklibs.rsp
 PRG1.exe: CMakeFiles/PRG1.dir/objects1.rsp
