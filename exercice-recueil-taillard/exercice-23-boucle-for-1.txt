@@ -1,0 +1,37 @@
+Boucle for (I) Qu’affiche le programme ci-dessous :
+
+#include<iostream>
+
+using namespace std;
+
+int main() {
+   cout << "(a) ";
+   for (int i = 1; i < 10; ++i) { cout << i << " "; }
+   cout << endl;
+   (a)
+
+   cout << "(b) ";
+   for (int i = 1; i < 10; i += 2) { cout << i << " "; }
+   cout << endl;
+   (b)
+
+   cout << "(d) ";
+   for (int i = 10; i > 1; --i) { cout << i << " "; }
+   cout << endl;
+   (c)
+
+   cout << "(d) ";
+   for (int i = 0; i < 10; ++i) { cout << i << " "; }
+   cout << endl;
+   (d)
+
+   cout << "(e) ";
+   for (int i = 1; i < 10; i = i * 2) { cout << i << " "; }
+   cout << endl;
+   (e)
+
+   cout << "(f) ";
+   for (int i = 1; i < 10; ++i) { if (i % 2 == 0) { cout << i << " "; }}
+   cout << endl;
+   (f)
+}
