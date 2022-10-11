@@ -11,7 +11,5 @@
 #include <iostream>
 
 int main() {
-
-
 }
 
