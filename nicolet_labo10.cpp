@@ -20,12 +20,18 @@ int main() {
     */
    double valeurUtilisateur = 0.0;
    double racine = 0.0;
+   const double precision = 1.0E-10;
    std::cout << "Enter un nombre dont vous voulez connaitre la racine carree : ";
    std::cin >> valeurUtilisateur;
    std::cout << std::endl;
 
-   racine = valeurUtilisateur / 2;
+   racine = valeurUtilisateur / 2.0;
+
+   while (racine * racine - valeurUtilisateur > precision){
 
 
+   }
+
+   return 0;
 
 }
