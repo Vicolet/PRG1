@@ -1,0 +1,40 @@
+Boucle for (IV) Qu’affiche le programme ci-dessous :
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   char c = 'a';
+   cout << "\n(" << c++ << ")";
+   for (char i = 'a'; i < 'd'; cout << " " << ++i);
+   // (a)
+
+   cout << "\n(" << c++ << ")";
+   for (char i = 'a'; i++ < 'd'; cout << " " << i);
+   // (b)
+
+   cout << "\n(" << c++ << ")";
+   for (char i = 'a'; i <= 'a' + 25; cout << " " << i++);
+   // (c)
+
+   cout << "\n(" << c++ << ")";
+   for (int i = 1 / 3; i; cout << " " << i++);
+   // (d)
+
+   cout << "\n(" << c++ << ") ";
+   for (int i = 0; i != 1; cout << " " << (i = i + 1 / 3));
+   // (e)
+
+   cout << "\n(" << c++ << ")";
+   for (int i = 12, k = 1; k++ < 5; cout << " " << i--);
+   // (f)
+
+   cout << "\n(" << c++ << ")";
+   for (int i = 12, k = 1; k++ < 5; k++, cout << " " << i--);
+   // (g)
+
+   cout << "\n(" << c++ << ") ";
+   for (int i = 1; cout << "Resultat: ", ++i < 5; cout << i << endl);
+   // (h)
+}
