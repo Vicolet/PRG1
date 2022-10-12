@@ -12,6 +12,7 @@ Boucle for (III) Qu’affiche le programme ci-dessous :
        s = s + n;
        cout << s << " ";
     }
+    // (a) 2 4 7 11 16
 
     s = 1;
     cout << "\n(" << c++ << ") ";
@@ -19,6 +20,7 @@ Boucle for (III) Qu’affiche le programme ci-dessous :
        n = n + 2;
        s = s + n;
     }
+    // (b) 4 9 16 25 36
 
     s = 1;
     int n;
@@ -28,4 +30,5 @@ Boucle for (III) Qu’affiche le programme ci-dessous :
        n++;
     }
     cout << s << " " << n << endl;
+    // (c) 10 7
  }
