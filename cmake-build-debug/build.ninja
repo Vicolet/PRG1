@@ -49,8 +49,8 @@ cmake_ninja_workdir = C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2
 
 build cmake_object_order_depends_target_PRG1: phony || CMakeFiles/PRG1.dir
 
-build CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo8.cpp || cmake_object_order_depends_target_PRG1
-  DEP_FILE = CMakeFiles\PRG1.dir\nicolet_labo8.cpp.obj.d
+build CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo10.cpp || cmake_object_order_depends_target_PRG1
+  DEP_FILE = CMakeFiles\PRG1.dir\nicolet_labo10.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\PRG1.dir
   OBJECT_FILE_DIR = CMakeFiles\PRG1.dir
@@ -65,7 +65,7 @@ build CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Us
 #############################################
 # Link the executable PRG1.exe
 
-build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj
+build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/nicolet_labo10.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PRG1.dir
