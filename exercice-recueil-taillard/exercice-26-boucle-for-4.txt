@@ -8,33 +8,36 @@ int main() {
    char c = 'a';
    cout << "\n(" << c++ << ")";
    for (char i = 'a'; i < 'd'; cout << " " << ++i);
-   // (a)
+   // (a) b c d
 
    cout << "\n(" << c++ << ")";
    for (char i = 'a'; i++ < 'd'; cout << " " << i);
-   // (b)
+   // (b) b c d
 
    cout << "\n(" << c++ << ")";
    for (char i = 'a'; i <= 'a' + 25; cout << " " << i++);
-   // (c)
+   // (c) a b c d ... z
 
    cout << "\n(" << c++ << ")";
    for (int i = 1 / 3; i; cout << " " << i++);
    // (d)
 
-   cout << "\n(" << c++ << ") ";
-   for (int i = 0; i != 1; cout << " " << (i = i + 1 / 3));
-   // (e)
+   //cout << "\n(" << c++ << ") ";
+   //for (int i = 0; i != 1; cout << " " << (i = i + 1 / 3));
+   // (e) affiche que des 0 à l'infinie
 
    cout << "\n(" << c++ << ")";
    for (int i = 12, k = 1; k++ < 5; cout << " " << i--);
-   // (f)
+   // (f) 12 11 10 9
 
    cout << "\n(" << c++ << ")";
    for (int i = 12, k = 1; k++ < 5; k++, cout << " " << i--);
-   // (g)
+   // (g) 12 11
 
    cout << "\n(" << c++ << ") ";
    for (int i = 1; cout << "Resultat: ", ++i < 5; cout << i << endl);
-   // (h)
+   // (h) Resultat:2
+   // Resultat:3
+   // Resultat:4
+   // Resultat:
 }
