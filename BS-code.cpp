@@ -4,29 +4,51 @@ using namespace std;
 
 int main() {
    char c = 'a';
-   int s = 1;
-   cout << "(" << c++ << ") ";
-   for (int n = 1; n <= 5; ++n) {
-      s = s + n;
-      cout << s << " ";
+   cout << "(" << c++ << ")\n";
+   for (int i = 1; i <= 3; ++i) {
+      for (int j = 1; j <= 4; ++j) {
+         cout << "*";
+      }
+      cout << endl;
    }
-   // (a) 2 4 7 11 16
 
-   s = 1;
-   cout << "\n(" << c++ << ") ";
-   for (int n = 1; n <= 10; cout << s << " ") {
-      n = n + 2;
-      s = s + n;
+   cout << "\n(" << c++ << ")\n";
+   for (int i = 0; i < 4; ++i) {
+      for (int j = 0; j < 3; ++j) {
+         cout << "*";
+      }
+      cout << endl;
    }
-   // (b)
 
-   s = 1;
-   int n;
-   cout << "\n(" << c++ << ") ";
-   for (n = 1; n <= 5; ++n) {
-      s = s + n;
-      n++;
+   cout << "\n(" << c++ << ")\n";
+   for (int i = 1; i <= 4; ++i) {
+      for (int j = 1; j <= i; ++j) {
+         cout << "*";
+      }
+      cout << endl;
    }
-   cout << s << " " << n << endl;
-   // (c)
+
+   cout << "\n(" << c++ << ")\n";
+   for (int i = 1; i <= 3; ++i) {
+      for (int j = 1; j <= 5; ++j) {
+         if (j % 2 == 0) {
+            cout << "*";
+         } else {
+            cout << "_";
+         }
+      }
+      cout << endl;
+   }
+
+   cout << "\n(" << c++ << ")\n";
+   for (int i = 1; i <= 3; ++i) {
+      for (int j = 1; j <= 5; ++j) {
+         if ((i + j) % 2 == 0) {
+            cout << "*";
+         } else {
+            cout << " ";
+         }
+      }
+      cout << endl;
+   }
 }
