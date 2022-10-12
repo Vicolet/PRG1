@@ -12,17 +12,21 @@
 #include <iostream>
 #include <iomanip>
 
+// Cette constante nous permet de set la precision à 10 chiffre après la virgule.
 const double PRECISION = 1.0E-10;
-
 
 int main() {
 
    std::cout << std::setprecision(10);
 
-   double valeurUtilisateur, approximation = 0.0;
-   double division = 2.0;
-   double precision = 1.0;
    int iterationHeron = 0;
+   double valeurUtilisateur, approximation = 0.0;
+
+   // Variable "division" initialisé à 2, car 2 est demandé comme première approximation.
+   double division = 2.0;
+   // Variable "precision" initialisé à 1, car elle doit rentrer dans la boucle pour avoir ça vraie valeur.
+   // (peut être initialisé avec toutes les valeurs sauf 0)
+   double precision = 1.0;
 
    std::cout << "Enter un nombre dont vous voulez connaitre la racine carree : ";
    std::cin >> valeurUtilisateur;
@@ -35,10 +39,9 @@ int main() {
       precision = approximation - division;
    }
 
-   double racineCarre = approximation;
-
    std::cout << "il y a " << iterationHeron << " iterations." << std::endl;
-   std::cout << "La racine de " << valeurUtilisateur << " est " << racineCarre << std::endl;
+   std::cout << "La racine de " << valeurUtilisateur << " est : " << approximation << std::endl;
 
    return 0;
+
 }
