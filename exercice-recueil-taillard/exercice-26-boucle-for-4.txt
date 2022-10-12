@@ -40,4 +40,5 @@ int main() {
    // Resultat:3
    // Resultat:4
    // Resultat:
+
 }
