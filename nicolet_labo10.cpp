@@ -62,7 +62,7 @@ int main() {
    while (precision > PRECISION || precision < -PRECISION) {
       iterationHeron++;
       approximation = valeurUtilisateur / division;
-      division = (approximation + division) / 2;
+      division = (approximation + division) / 2.0;
       precision = approximation - division;
    }
 
