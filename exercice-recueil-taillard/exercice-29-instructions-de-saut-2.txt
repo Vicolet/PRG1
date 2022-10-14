@@ -1,0 +1,69 @@
+// (a) 3
+// (b) 0
+// (c) 40
+// (d) 20
+// (e) boucle infinie sans rien afficher
+
+Instructions de saut (II) Qu’affiche le programme ci-dessous :
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   char c = 'a';
+   int i, k;
+
+   cout << "(" << c++ << ") ";
+   i = 1;
+   while (i < 9) {
+      cout << (i += 2) << endl;
+      break;
+   }
+
+   cout << "(" << c++ << ") ";
+   i = -20;
+   do
+      i * 117 % 51;
+   while (++i);
+   cout << i << endl;
+
+   cout << "(" << c++ << ") ";
+   k = 0;
+   for (;;) {
+      k++;
+      if (k < 20)
+         continue;
+      k = k * 2;
+      break;
+   }
+   cout << k << endl;
+
+   cout << "(" << c++ << ") ";
+   i = 0;
+   while (i < 12) {
+      switch (i) {
+         case 0 :
+            i += 2;
+         case 1:
+            break;
+         case 2:
+            i++;
+         case 3:
+            ++i;
+            continue;
+         case 4 :
+            i++;
+            break;
+         default :
+            i *= 2;
+      }
+   }
+   cout << i << endl;
+
+   cout << "(" << c++ << ")\n";
+   i = 0;
+   while (i < 10) {
+      continue;
+      cout << (i += 2) << endl;
+   }
+}
