@@ -55,8 +55,6 @@ int main() {
       }
    }
 
-
-
    /**
     * Cette boucle while permet d'effectuer l'algorithme d'Héron d’Alexandrie en fonction de la précision voulue, la
     * précision voulue est donné avant le main avec la constante PRECISION
