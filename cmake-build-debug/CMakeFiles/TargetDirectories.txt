@@ -1,3 +1,0 @@
-C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug/CMakeFiles/PRG1.dir
-C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
