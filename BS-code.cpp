@@ -10,47 +10,34 @@
 */
 
 #include <iostream>
-#include <iomanip>
+#include <fstream>
 
 const double PRECISION = 1.0E-10;
-const double ESTIMATION_DE_DEPART = 2.0;
 
 int main() {
+   std::ofstream labo10;
+   labo10.open("test.csv");
+   labo10 << "x" << "," << "iteration"<< std::endl;
 
-   std::cout << std::setprecision(11);
+   for (double i = 1.0E-100; i < 1.0E+101; i *= 10) {
 
-   bool flagNegatif = false;
-   int iterationHeron = 0;
-   double valeurUtilisateur = 0.0, approximation =0.0;
-   double division = 2.0;
-   double precision = 1.0;
 
-   while (not flagNegatif) {
-      std::cout << "Entrer un nombre dont vous voulez connaitre la racine carree : ";
-      std::cin >> valeurUtilisateur;
-      std::cout << std::endl;
+      int iterationHeron = 0;
+      double valeurUtilisateur, approximation = 0.0;
+      double division = 2.0;
+      double precision = 1.0;
 
-      if (valeurUtilisateur < 0) {
-         std::cout << "Le nombre ne doit pas etre negatif ! " << std::endl;
-      } else if (valeurUtilisateur == 0) {
-         std::cout << "La racine de " << valeurUtilisateur << " est : " << approximation << std::endl;
-         std::cout << "Il y a " << iterationHeron << " iterations." << std::endl;
-         return 0;
-      } else {
-         flagNegatif = true;
+      valeurUtilisateur = i;
+
+      while (precision > PRECISION * approximation || precision < -PRECISION * approximation) {
+         iterationHeron++;
+         approximation = valeurUtilisateur / division;
+         division = (approximation + division) / 2.0;
+         precision = approximation - division;
       }
+      labo10 << valeurUtilisateur << "," << iterationHeron << std::endl;;
    }
-
-   while (precision > PRECISION * approximation|| precision < -PRECISION * approximation) {
-      iterationHeron++;
-      approximation = valeurUtilisateur / division;
-      division = (approximation + division) / 2.0;
-      precision = approximation - division;
-   }
-
-   std::cout << "La racine de " << valeurUtilisateur << " est : " << approximation << std::endl;
-   std::cout << "Il y a " << iterationHeron << " iterations." << std::endl;
-
+   labo10.close();
    return 0;
 
 }
