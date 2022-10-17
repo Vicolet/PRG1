@@ -13,7 +13,7 @@
 #include <iomanip>
 
 /**
- * Cette constante nous permet donner une précision de 10 chiffre après la virgule.
+ * Cette constante nous permet donner une précision de 10 chiffre après la virgule.+¦
  */
 const double PRECISION = 1.0E-10;
 
@@ -40,8 +40,9 @@ int main() {
    double precision = 1.0;
 
    /**
-    * Cette boucle while permet de tester si la valeur entrée par l'utilisateur est négative, si la valeur est negative
-    * le programme demande une nouvelle valeur à l'utilisateur.
+    * Cette boucle while permet de tester si la valeur entrée par l'utilisateur est négative ou égale à 0, si la valeur
+    * est negative le programme demande une nouvelle valeur à l'utilisateur. Si la valeur est égale à 0 la structure de
+    * mon programme m'oblige à en faire un cas exceptionnel.
     */
    while (not flagNegatif) {
       std::cout << "Entrer un nombre dont vous voulez connaitre la racine carree : ";
@@ -50,6 +51,10 @@ int main() {
 
       if (valeurUtilisateur < 0) {
          std::cout << "Le nombre ne doit pas etre negatif ! " << std::endl;
+      } else if (valeurUtilisateur == 0) {
+         std::cout << "La racine de " << valeurUtilisateur << " est : " << approximation << std::endl;
+         std::cout << "Il y a " << iterationHeron << " iterations." << std::endl;
+         return 0;
       } else {
          flagNegatif = true;
       }
@@ -57,12 +62,13 @@ int main() {
 
    /**
     * Cette boucle while permet d'effectuer l'algorithme d'Héron d’Alexandrie en fonction de la précision voulue, la
-    * précision voulue est donné avant le main avec la constante PRECISION
+    * précision voulue est donné avant le main avec la constante PRECISION et dans ce cas elle modifié pour pouvoir être
+    * efficace avec les très grand comme les très petit nombre.
     */
-   while (precision > PRECISION || precision < -PRECISION) {
+   while (precision > PRECISION * approximation || precision < -PRECISION * approximation) {
       iterationHeron++;
       approximation = valeurUtilisateur / division;
-      division = (approximation + division) / 2;
+      division = (approximation + division) / 2.0;
       precision = approximation - division;
    }
 
