@@ -3,7 +3,8 @@
  * Auteur(s)       : Victor Nicolet <victor.nicolet@heig-vd.ch>
  * Date creation   : 2022-10-18
  * Laboratoire n°  : 11
- * Description     : Ce programme permet de faire une approximation de π par la méthode Monte-Carlo
+ * Description     : 3.32 Ce programme permet de faire une approximation de π par la méthode Monte-Carlo.
+ *                   3.33 Ce programme effectue plusieurs fois le problème de Monty Hall et en tire une conclusion.
  * Remarque(s)     :
  * Compilateur     : gcc version 11.2.0 (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders)
 */
