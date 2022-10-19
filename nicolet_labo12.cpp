@@ -10,12 +10,33 @@
 
 #include <iostream>
 
-int main(){
+/**
+ * Cette fonction nous permet de retourner un carrée de lettre
+ * @param i Paramètre que rentre l'utilisateur
+ */
+void carreChar(int i);
+
+int main() {
    int valeurUtilisateur = 0;
 
-   std::cout << "Introduiser le nombre de carre voulu : " << std::endl;
+   std::cout << "Introduiser le nombre de carre voulu : ";
    std::cin >> valeurUtilisateur;
 
+   carreChar(valeurUtilisateur);
 
+   return 0;
+}
 
+void carreChar(int i) {
+   int carre = i + i - 1;
+   for (int axeY = 0; axeY != carre; axeY++) {
+      std::cout << std::endl;
+      for (int axeX = 0; axeX != carre; axeX++) {
+         char lettre = 'A' + (i - 1);
+         int min1 = std::min(axeY, axeX);
+         int min2 = std::min(carre - 1 - axeY, carre - 1 - axeX);
+         lettre -= std::min(min1, min2);
+         std::cout << lettre ;
+      }
+   }
 }
