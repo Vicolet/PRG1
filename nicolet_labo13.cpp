@@ -24,16 +24,22 @@ int main() {
    std::cin >> valeurUtilisateur;
    std::cout << std::endl;
 
-   int iterationSyrac = suiteSyracuse(valeurUtilisateur);
+   std::cout << "\nExercice 4.16A :" << std::endl;
 
+   int iterationSyrac = suiteSyracuse(valeurUtilisateur);
    std::cout << "Iteration suite de Syracuse pour n = " << valeurUtilisateur << " : " << iterationSyrac << std::endl;
    //  N = 7 : (7 , 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1)
 
+   std::cout << "\nExercice 4.16B :" << std::endl;
+
+   for (int32_t i = 1; i != valeurUtilisateur + 1; i++) {
+      std::cout << suiteSyracuse(i) << std::endl;
+   }
 }
 
 int suiteSyracuse(int syrac) {
-   int number_iteration = 0;
-   std::cout << "N("<< syrac << ") = [";
+   int nombreIteration = 0;
+   std::cout << "N(" << syrac << ") = [";
    while (syrac != 1) {
       if (syrac % 2 == 0) {
          syrac = syrac / 2;
@@ -41,10 +47,10 @@ int suiteSyracuse(int syrac) {
          syrac = (syrac * 3) + 1;
       }
       std::cout << syrac << ", ";
-      number_iteration++;
+      nombreIteration++;
    }
-   std::cout << "]" << std::endl;
+   std::cout << "] " << nombreIteration << " iteration" << std::endl;
 
-   return number_iteration;
+   return nombreIteration;
 }
 
