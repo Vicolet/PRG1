@@ -32,8 +32,8 @@ int main() {
 
    std::cout << "\nExercice 4.16B :" << std::endl;
 
-   for (int32_t i = 1; i != valeurUtilisateur + 1; i++) {
-      std::cout << suiteSyracuse(i) << std::endl;
+   for (int i = 1; i != valeurUtilisateur + 1; i++) {
+      suiteSyracuse(i);
    }
 }
 
