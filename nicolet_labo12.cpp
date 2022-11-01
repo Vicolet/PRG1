@@ -36,7 +36,7 @@ void carreChar(int i) {
          int min1 = std::min(axeY, axeX);
          int min2 = std::min(carre - 1 - axeY, carre - 1 - axeX);
          lettre -= std::min(min1, min2);
-         std::cout << lettre ;
+         std::cout << lettre;
       }
    }
 }
