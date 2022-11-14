@@ -1,0 +1,59 @@
+at, length, size, resize, substr
+Qu’imprime le programme suivant, en supposant avoir supprimé les éventuelles lignes fautives.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   string s1 = "ABC";
+   cout << '|' << s1[1] << '|' << endl;
+   // |B|
+
+   string s2 = s1[1];
+   cout << '|' << s2 << '|' << endl;
+   // |B|
+
+   string s3;
+   s3 = s1[1];
+   cout << '|' << s3 << '|' << endl;
+   cout << '|' << s1[3] << '|' << endl;
+   cout << '|' << s1[4] << '|' << endl;
+   cout << '|' << s1.at(3) << '|' << endl;
+   // |B|
+   // |C|
+   // ||
+   // |C|
+
+   string s7;
+   cout << s7.length() << endl;
+   cout << s1.length() << endl;
+   cout << s1.size() << endl;
+   // ?
+   // 3
+   // 2
+
+   s1.resize(5);
+   cout << '|' << s1 << '|' << endl;
+   // |ABC00|
+
+   string s11 = "ABC";
+   s11.resize(2, 'x');
+   cout << '|' << s11 << '|' << endl;
+
+   string s12 = "ABC";
+   s12.resize(4, 'x');
+   cout << '|' << s12 << '|' << endl;
+
+   string s13 = "ABCDE";
+   cout << '|' << s13.substr(1, 2) << '|' << endl;
+
+   string s14 = "ABCDE";
+   cout << '|' << s14.substr(0, 10) << '|' << endl;
+
+   string s15 = "ABCDE";
+   cout << '|' << s15.substr(3) << '|' << endl;
+
+   string s16 = "ABCDE";
+   cout << '|' << s16.substr() << '|' << endl;
+}
