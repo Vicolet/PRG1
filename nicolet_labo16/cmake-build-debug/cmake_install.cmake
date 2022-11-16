@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet-labo16
+# Install script for directory: C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo16
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet-labo16/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo16/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

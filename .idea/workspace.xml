@@ -82,17 +82,17 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nicolet_labo15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nicolet_labo16" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="PRG1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PRG1" TARGET_NAME="PRG1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PRG1" RUN_TARGET_NAME="PRG1">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PRG1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PRG1" TARGET_NAME="PRG1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PRG1" RUN_TARGET_NAME="PRG1">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -148,6 +148,7 @@
       <workItem from="1668169227914" duration="4642000" />
       <workItem from="1668429103397" duration="3908000" />
       <workItem from="1668464142308" duration="91000" />
+      <workItem from="1668622527958" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1665612246670</created>

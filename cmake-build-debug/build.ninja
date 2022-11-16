@@ -57,8 +57,8 @@ build CMakeFiles/PRG1.dir/BS-code.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/vi
   TARGET_COMPILE_PDB = CMakeFiles\PRG1.dir\
   TARGET_PDB = PRG1.pdb
 
-build CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-47-inversion.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-47-inversion.cpp || cmake_object_order_depends_target_PRG1
-  DEP_FILE = CMakeFiles\PRG1.dir\exercice-recueil-taillard\exercice-47-inversion.cpp.obj.d
+build CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-59-tous-pairs.cpp || cmake_object_order_depends_target_PRG1
+  DEP_FILE = CMakeFiles\PRG1.dir\exercice-recueil-taillard\exercice-59-tous-pairs.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\PRG1.dir
   OBJECT_FILE_DIR = CMakeFiles\PRG1.dir\exercice-recueil-taillard
@@ -73,7 +73,7 @@ build CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-47-inversion.cpp.ob
 #############################################
 # Link the executable PRG1.exe
 
-build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/BS-code.cpp.obj CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-47-inversion.cpp.obj
+build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/BS-code.cpp.obj CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PRG1.dir
