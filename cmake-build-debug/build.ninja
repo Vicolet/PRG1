@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target PRG1
 
@@ -49,11 +49,19 @@ cmake_ninja_workdir = C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-buil
 
 build cmake_object_order_depends_target_PRG1: phony || CMakeFiles/PRG1.dir
 
-build CMakeFiles/PRG1.dir/BS-code.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp || cmake_object_order_depends_target_PRG1
+build CMakeFiles/PRG1.dir/BS-code.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp || cmake_object_order_depends_target_PRG1
   DEP_FILE = CMakeFiles\PRG1.dir\BS-code.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\PRG1.dir
   OBJECT_FILE_DIR = CMakeFiles\PRG1.dir
+  TARGET_COMPILE_PDB = CMakeFiles\PRG1.dir\
+  TARGET_PDB = PRG1.pdb
+
+build CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-47-inversion.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-47-inversion.cpp || cmake_object_order_depends_target_PRG1
+  DEP_FILE = CMakeFiles\PRG1.dir\exercice-recueil-taillard\exercice-47-inversion.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\PRG1.dir
+  OBJECT_FILE_DIR = CMakeFiles\PRG1.dir\exercice-recueil-taillard
   TARGET_COMPILE_PDB = CMakeFiles\PRG1.dir\
   TARGET_PDB = PRG1.pdb
 
@@ -65,7 +73,7 @@ build CMakeFiles/PRG1.dir/BS-code.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/41
 #############################################
 # Link the executable PRG1.exe
 
-build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/BS-code.cpp.obj
+build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/BS-code.cpp.obj CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-47-inversion.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PRG1.dir
@@ -81,7 +89,7 @@ build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/BS-code.cp
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +100,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1 -BC:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1 -BC:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -110,7 +118,7 @@ build PRG1: phony PRG1.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug
+# Folder: C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug
 
 build all: phony PRG1.exe
 

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "PRG1.exe"
+			"path" : "nicolet_labo16.exe"
 		},
 		{
-			"path" : "PRG1.pdb"
+			"path" : "nicolet_labo16.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -59,7 +59,7 @@
 			]
 		}
 	],
-	"id" : "PRG1::@6890427a1f51a3e7e1df",
+	"id" : "nicolet_labo16::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -79,8 +79,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "PRG1",
-	"nameOnDisk" : "PRG1.exe",
+	"name" : "nicolet_labo16",
+	"nameOnDisk" : "nicolet_labo16.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "BS-code.cpp",
+			"path" : "nicolet-labo16.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

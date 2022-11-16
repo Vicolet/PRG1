@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug"
+			"value" : "c:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet-labo16/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1"
+			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet-labo16"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -635,7 +635,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/PRG1"
+			"value" : "C:/Program Files (x86)/nicolet_labo16"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "PRG1"
+			"value" : "nicolet_labo16"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1230,7 +1230,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "PRG1_BINARY_DIR",
+			"name" : "nicolet_labo16_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1239,10 +1239,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug"
+			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet-labo16/cmake-build-debug"
 		},
 		{
-			"name" : "PRG1_IS_TOP_LEVEL",
+			"name" : "nicolet_labo16_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1254,7 +1254,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "PRG1_SOURCE_DIR",
+			"name" : "nicolet_labo16_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1"
+			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet-labo16"
 		}
 	],
 	"kind" : "cache",

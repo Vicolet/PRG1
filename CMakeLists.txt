@@ -3,5 +3,4 @@ project(PRG1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(PRG1
-        BS-code.cpp)
+add_executable(PRG1 BS-code.cpp exercice-recueil-taillard/exercice-59-tous-pairs.cpp)
