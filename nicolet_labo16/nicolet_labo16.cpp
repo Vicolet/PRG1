@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Nom du fichier  : nicolet_labo16.cpp
  * Auteur(s)       : Victor Nicolet <victor.nicolet@heig-vd.ch>
