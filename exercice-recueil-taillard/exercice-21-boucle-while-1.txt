@@ -1,0 +1,74 @@
+Boucle while (I) Qu’affiche le programme ci-dessous :
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   int i = 0;
+   cout << "(a) ";
+   while (i - 10) {
+      i += 2;
+      cout << i << " ";
+   }
+   //(a) 2 4 6 8 10
+
+   cout << endl;
+   i = 0;
+   cout << "(b) ";
+   while (i - 10)
+      i += 2;
+   cout << i << " ";
+   cout << endl;
+   //(b) 18
+
+   i = 0;
+   cout << "(c) ";
+   while (i < 11) {
+      i += 2;
+      cout << i << " ";
+   }
+   cout << endl;
+   //(c) 2 4 6 8 10 12
+
+   i = 11;
+   cout << "(d) ";
+   while (i--) {
+      cout << i-- << " ";
+   }
+   cout << endl;
+   //(d) 10 8 6 4 2 0 -2 -4 ...
+
+   i = 12;
+   cout << "(e) ";
+   while (i--) {
+      cout << --i << " ";
+   }
+   cout << endl;
+   //(e) 10 8 6 4 2 0
+
+   i = 0;
+   cout << "(f) ";
+   while (i++ < 10) {
+      cout << i-- << " ";
+   }
+   cout << endl;
+   //(f) boucle infinie n'affiche que des 1
+
+   i = 1;
+   cout << "(g) ";
+   while (i <= 5) {
+      cout << 2 * i++ << " ";
+   }
+   cout << endl;
+   //(g) 2 4 6 8 10
+
+   i = 1;
+   cout << "(h) ";
+   while (i != 9) {
+      cout << (i = i + 2) << " ";
+   }
+   cout << endl;
+   //(h) 3 5 7 9
+
+}

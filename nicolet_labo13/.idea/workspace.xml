@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b7e8c96-4051-4061-a7fc-7a5c0014aa51" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo10/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo10/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo10/.idea/nicolet_labo10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo10/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo11/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo11/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo11/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo11/.idea/nicolet_labo11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo11/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo12/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo12/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo12/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo2/.idea/nicolet_labo2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo3/.idea/nicolet_labo3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo4/.idea/nicolet_labo4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo4/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo5/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo5/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo5/.idea/nicolet_labo5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo5/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo5/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo6/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo6/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo6/.idea/nicolet_labo6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo7/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo7/.idea/nicolet_labo7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo8/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo8/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo8/.idea/nicolet_labo8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo8/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo8/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo9/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo9/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo9/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo9/.idea/nicolet_labo9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nicolet_labo9/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectId" id="2HGC69ZzvIMiXvJSceOYRPpxUpd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nicolet_labo14" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b7e8c96-4051-4061-a7fc-7a5c0014aa51" name="Changes" comment="" />
+      <created>1667901855511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667901855511</updated>
+      <workItem from="1667901857006" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
