@@ -51,7 +51,11 @@ build cmake_object_order_depends_target_PRG1: phony || CMakeFiles/PRG1.dir
 
 build CMakeFiles/PRG1.dir/BS-code.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp || cmake_object_order_depends_target_PRG1
   DEP_FILE = CMakeFiles\PRG1.dir\BS-code.cpp.obj.d
+<<<<<<< HEAD
   FLAGS = -g -std=gnu++14
+=======
+  FLAGS = -g -std=gnu++20
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
   OBJECT_DIR = CMakeFiles\PRG1.dir
   OBJECT_FILE_DIR = CMakeFiles\PRG1.dir
 

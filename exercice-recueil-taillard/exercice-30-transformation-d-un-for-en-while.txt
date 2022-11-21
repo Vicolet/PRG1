@@ -1,0 +1,20 @@
+Transformation d’un for en while
+Transformer le programme suivant en utilisant une boucle while à la place d’une boucle for. Le programme ne
+doit pas comporter de break ni de continue.
+
+ #include <iostream>
+
+ int main() {
+    for (int i = 100; i < 1000; i++) {
+       int j = i % 10 * 100 + i / 10 % 10 * 10 + i / 100, k = abs(i - j),
+          r = k % 10 * 100 + k / 10 % 10 * 10 + k / 100;
+       if (j == i || k + r == 1089)
+          continue;
+       else {
+          std::cout << "Nombre a 3 chiffres particulier: " << i << std::endl;
+          break;
+       }
+    }
+ }
+
+Question subsidiaire : qu’imprime ce programme ?

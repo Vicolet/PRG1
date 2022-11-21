@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="PRG1" targetName="PRG1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="test sur labo10">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/PRG1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/PRG1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-27-boucle-for-imbriquees.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-27-boucle-for-imbriquees.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../PRG1\exportToHTML" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2021" />
+    <option name="minorVersion" value="3" />
+  </component>
+  <component name="ProjectId" id="2F1dgbhsYPGZOF1Opj27M2VGoA4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../../aPROG/PRG1" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.DirectoryMappings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PRG1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PRG1" TARGET_NAME="PRG1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PRG1" RUN_TARGET_NAME="PRG1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="" />
+      <created>1663663640282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663663640282</updated>
+      <workItem from="1663663644956" duration="2274000" />
+      <workItem from="1663748875767" duration="2183000" />
+      <workItem from="1663751188159" duration="7390000" />
+      <workItem from="1663933341836" duration="1425000" />
+      <workItem from="1664191220298" duration="5163000" />
+      <workItem from="1664266724159" duration="8709000" />
+      <workItem from="1664353471483" duration="3229000" />
+      <workItem from="1664356763665" duration="104000" />
+      <workItem from="1664356909071" duration="119000" />
+      <workItem from="1664357081512" duration="2400000" />
+      <workItem from="1664363847349" duration="4660000" />
+      <workItem from="1664368776599" duration="8000" />
+      <workItem from="1664536862451" duration="4887000" />
+      <workItem from="1664642151930" duration="1112000" />
+      <workItem from="1664799927336" duration="1238000" />
+      <workItem from="1664871691025" duration="5137000" />
+      <workItem from="1664877113904" duration="475000" />
+      <workItem from="1664958499967" duration="4552000" />
+      <workItem from="1664967094047" duration="5297000" />
+      <workItem from="1664993153703" duration="1955000" />
+      <workItem from="1665568560955" duration="6379000" />
+      <workItem from="1665610215403" duration="25000" />
+      <workItem from="1665610264243" duration="2518000" />
+      <workItem from="1665614473136" duration="699000" />
+      <workItem from="1665616659934" duration="432000" />
+      <workItem from="1665617141387" duration="166000" />
+      <workItem from="1665746407901" duration="494000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1665612246670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665612246670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1665612248817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665612248817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test sur labo10">
+      <created>1665615721039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665615721039</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/PRG1" />
+    </ignored-roots>
+    <MESSAGE value="test" />
+    <MESSAGE value="test sur labo10" />
+    <option name="LAST_COMMIT_MESSAGE" value="test sur labo10" />
+  </component>
+</project>

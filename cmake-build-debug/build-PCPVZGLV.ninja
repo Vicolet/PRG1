@@ -49,6 +49,7 @@ cmake_ninja_workdir = C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-buil
 
 build cmake_object_order_depends_target_PRG1: phony || CMakeFiles/PRG1.dir
 
+<<<<<<< HEAD
 build CMakeFiles/PRG1.dir/BS-code.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp || cmake_object_order_depends_target_PRG1
   DEP_FILE = CMakeFiles\PRG1.dir\BS-code.cpp.obj.d
   FLAGS = -g -std=gnu++14
@@ -61,6 +62,14 @@ build CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.o
   OBJECT_DIR = CMakeFiles\PRG1.dir
   OBJECT_FILE_DIR = CMakeFiles\PRG1.dir\exercice-recueil-taillard
 
+=======
+build CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj: CXX_COMPILER__PRG1_Debug C$:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo8.cpp || cmake_object_order_depends_target_PRG1
+  DEP_FILE = CMakeFiles\PRG1.dir\nicolet_labo8.cpp.obj.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = CMakeFiles\PRG1.dir
+  OBJECT_FILE_DIR = CMakeFiles\PRG1.dir
+
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
 
 # =============================================================================
 # Link build statements for EXECUTABLE target PRG1
@@ -69,7 +78,11 @@ build CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.o
 #############################################
 # Link the executable PRG1.exe
 
+<<<<<<< HEAD
 build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/BS-code.cpp.obj CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
+=======
+build PRG1.exe: CXX_EXECUTABLE_LINKER__PRG1_Debug CMakeFiles/PRG1.dir/nicolet_labo8.cpp.obj
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\PRG1.dir

@@ -11,6 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="test pc portable">
       <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-47-inversion.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-59-tous-pairs.cpp" afterDir="false" />
@@ -28,6 +29,18 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/PRG1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/PRG1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+=======
+    <list default="true" id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-23-boucle-for-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-24-boucle-for-2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-4e92ebf7aa70b8cb13b7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-05T12-28-59-0032.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +57,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -55,6 +69,8 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="413acd3a-c8a8-46df-a61c-a8e71629389d" />
   </component>
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
       <scroll-view-position x="0" y="0" />
@@ -77,8 +93,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -86,9 +105,15 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/nicolet-labo16" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2021-2022/PRG1" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
   </component>
   <component name="RunManager">
     <configuration name="PRG1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PRG1" TARGET_NAME="PRG1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PRG1" RUN_TARGET_NAME="PRG1">
@@ -128,6 +153,7 @@
       <workItem from="1664871691025" duration="5137000" />
       <workItem from="1664877113904" duration="475000" />
       <workItem from="1664958499967" duration="4552000" />
+<<<<<<< HEAD
       <workItem from="1664967094047" duration="5297000" />
       <workItem from="1664993153703" duration="1955000" />
       <workItem from="1665568560955" duration="6379000" />
@@ -190,11 +216,17 @@
       <updated>1665747263167</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+=======
+      <workItem from="1664967094047" duration="6140000" />
+      <workItem from="1665400489911" duration="3787000" />
+    </task>
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
       <list>
@@ -205,11 +237,14 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
             <State>
               <option name="FILTERS">
                 <map>
@@ -223,11 +258,15 @@
                 </map>
               </option>
             </State>
+=======
+            <State />
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
           </value>
         </entry>
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/PRG1" />
@@ -237,4 +276,6 @@
     <MESSAGE value="test pc portable" />
     <option name="LAST_COMMIT_MESSAGE" value="test pc portable" />
   </component>
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
 </project>

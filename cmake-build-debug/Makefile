@@ -152,6 +152,7 @@ BS-code.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.s
 .PHONY : BS-code.cpp.s
 
+<<<<<<< HEAD
 exercice-recueil-taillard/exercice-59-tous-pairs.obj: exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
 .PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.obj
 
@@ -176,6 +177,8 @@ exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s
 .PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s
 
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,9 +191,12 @@ help:
 	@echo ... BS-code.obj
 	@echo ... BS-code.i
 	@echo ... BS-code.s
+<<<<<<< HEAD
 	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.obj
 	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.i
 	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.s
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
 .PHONY : help
 
 

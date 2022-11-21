@@ -85,9 +85,12 @@
 		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp">
 			<Option target="PRG1"/>
 		</Unit>
+<<<<<<< HEAD
 		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-59-tous-pairs.cpp">
 			<Option target="PRG1"/>
 		</Unit>
+=======
+>>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
 		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
