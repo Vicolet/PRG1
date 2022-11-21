@@ -1,84 +1,117 @@
-<<<<<<< HEAD
 /**
- * Nom du fichier  : nicolet_labo10.cpp
+ * Nom du fichier  : nicolet_labo16.cpp
  * Auteur(s)       : Victor Nicolet <victor.nicolet@heig-vd.ch>
- * Date creation   : 2022-10-11
- * Laboratoire n°  : 10
- * Description     : Ce programme permet de calculer la racine carrée d’un nombre de type double positif avec
- *                   10 chiffres significatifs grace à l’algorithme de Héron d’Alexandrie
+ * Date creation   : 2022-11-15
+ * Laboratoire n°  : 16
+ * Description     : Exercer l’utilisation des string
  * Remarque(s)     :
  * Compilateur     : gcc version 11.2.0 (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders)
 */
 
 #include <iostream>
-#include <fstream>
+#include <string>
 
-const double PRECISION = 1.0E-10;
+/**
+ *
+ * @param val
+ * @return
+ */
+std::string construire(size_t val);
 
-int main() {
-   std::ofstream labo10;
-   labo10.open("test.csv");
-   labo10 << "x" << "," << "iteration"<< std::endl;
+/**
+ *
+ * @param val1
+ * @param val2
+ */
+void ajustement(std::string &val1, std::string &val2);
 
-   for (double i = 1.0E-100; i < 1.0E+101; i *= 10) {
+/**
+ *
+ * @param lhs
+ * @param rhs
+ * @return
+ */
+std::string plus(const std::string &lhs, const std::string &rhs);
 
-
-      int iterationHeron = 0;
-      double valeurUtilisateur, approximation = 0.0;
-      double division = 2.0;
-      double precision = 1.0;
-
-      valeurUtilisateur = i;
-
-      while (precision > PRECISION * approximation || precision < -PRECISION * approximation) {
-         iterationHeron++;
-         approximation = valeurUtilisateur / division;
-         division = (approximation + division) / 2.0;
-         precision = approximation - division;
-      }
-      labo10 << valeurUtilisateur << "," << iterationHeron << std::endl;;
-   }
-   labo10.close();
-   return 0;
-
-}
-||||||| 3935752
-#include <iostream>
-#include <iomanip>
-#include <fstream>
-
-const double PRECISION = 1.0E-10;
+/**
+ *
+ * @param lhs
+ * @param rhs
+ * @return
+ */
+std::string fois(const std::string &lhs, const std::string &rhs);
 
 int main() {
-   int iterationHeron;
-   double valeurUtilisateur = 0.0, approximation;
-   double division;
-   double precision;
+    size_t valeur1 = 128;
+    size_t valeur2 = 3;
 
-   std::cout << std::setprecision(10);
-   std::ofstream labo10;
-   labo10.open("nicolet_labo10_csv.csv");
-   labo10 << "valeur de x, iteration \n";
+    std::string binValeur1 = construire(valeur1);
+    std::string binValeur2 = construire(valeur2);
 
-   for (double i = 1; i < 1E9; i *= 10) {
-      iterationHeron = 0;
-      valeurUtilisateur = i;
-      approximation = 0.0;
-      division = 2.0;
-      precision = 1.0;
+    std::cout << valeur1 << " convertie en binaire donne -> " << binValeur1 << std::endl;
+    std::cout << valeur2 << " convertie en binaire donne -> " << binValeur2 << std::endl;
 
-      while (precision > PRECISION || precision < -PRECISION) {
-         iterationHeron++;
-         approximation = valeurUtilisateur / division;
-         division = (approximation + division) / 2;
-         precision = approximation - division;
-      }
-      labo10 << valeurUtilisateur << "," << iterationHeron << "\n";
-   }
+    std::cout << binValeur1 << " et " << binValeur2 << " ajuste donne ";
+    ajustement(binValeur1, binValeur2);
+    std::cout << binValeur1 << " et " << binValeur2 << std::endl;
 
-   labo10.close();
-   return 0;
+
+    std::cout << binValeur1 << " + " << binValeur2 << " = " << plus(binValeur1, binValeur2) << std::endl;
+    // faire une suite de fibo
+
+    std::cout << binValeur1 << " * " << binValeur2 << " = " << fois(binValeur1, binValeur2) << std::endl;
+    // faire une factorielle
 
 }
-=======
->>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
+
+std::string construire(size_t val) {
+    std::string construction;
+    while (val != 0) {
+        construction = (val % 2 != 0 ? "1" : "0") + construction;
+        val /= 2;
+    }
+    return construction;
+}
+
+void ajustement(std::string &val1, std::string &val2) {
+    if (val1.size() < val2.size())
+        val1.insert(0, val2.size() - val1.size(), '0');
+    else
+        val2.insert(0, val1.size() - val2.size(), '0');
+}
+
+std::string plus(const std::string &lhs, const std::string &rhs) {
+    std::string somme;
+    int carry = 0;
+    for (size_t i = lhs.size() - 1; i != SIZE_MAX; --i) {
+        int ilhs = lhs[i] - '0', irhs = rhs[i] - '0';
+        int res = ilhs + irhs + carry;
+        if (res == 0 or res == 2)
+            somme = "0" + somme;
+        else
+            somme = "1" + somme;
+        carry = res > 1 ? 1 : 0;
+    }
+    if (carry == 1)
+        somme = "1" + somme;
+
+    return somme;
+}
+
+std::string fois(const std::string &lhs, const std::string &rhs) {
+    std::string produit;
+    int multiplication = 0;
+    for (size_t i = lhs.size() - 1; i != SIZE_MAX; --i) {
+        std::string produitTemp;
+        produitTemp.insert(0, multiplication, '0');
+        for (size_t j = lhs.size() - 1; j != SIZE_MAX; --j) {
+            int ilhs = lhs[j] - '0', irhs = rhs[i] - '0';
+            int res = ilhs * irhs;
+            produitTemp = res ? "1" + produitTemp : "0" + produitTemp;
+        }
+        multiplication++;
+        ajustement(produit, produitTemp);
+        produit = plus(produitTemp, produit);
+    }
+    return produit;
+}
