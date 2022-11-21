@@ -153,6 +153,7 @@ BS-code.cpp.s:
 .PHONY : BS-code.cpp.s
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 exercice-recueil-taillard/exercice-59-tous-pairs.obj: exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
 .PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.obj
 
@@ -179,6 +180,33 @@ exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s:
 
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+exercice-recueil-taillard/exercice-59-tous-pairs.obj: exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
+.PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.obj
+
+# target to build an object file
+exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
+.PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.cpp.obj
+
+exercice-recueil-taillard/exercice-59-tous-pairs.i: exercice-recueil-taillard/exercice-59-tous-pairs.cpp.i
+.PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.i
+
+# target to preprocess a source file
+exercice-recueil-taillard/exercice-59-tous-pairs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.i
+.PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.cpp.i
+
+exercice-recueil-taillard/exercice-59-tous-pairs.s: exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s
+.PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.s
+
+# target to generate assembly for a file
+exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s
+.PHONY : exercice-recueil-taillard/exercice-59-tous-pairs.cpp.s
+
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -192,11 +220,18 @@ help:
 	@echo ... BS-code.i
 	@echo ... BS-code.s
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.obj
 	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.i
 	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.s
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.obj
+	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.i
+	@echo ... exercice-recueil-taillard/exercice-59-tous-pairs.s
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
 .PHONY : help
 
 

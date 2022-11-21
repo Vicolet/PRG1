@@ -86,11 +86,18 @@
 			<Option target="PRG1"/>
 		</Unit>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-59-tous-pairs.cpp">
 			<Option target="PRG1"/>
 		</Unit>
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-59-tous-pairs.cpp">
+			<Option target="PRG1"/>
+		</Unit>
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
 		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

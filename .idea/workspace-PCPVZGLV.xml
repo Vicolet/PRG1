@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="test pc portable">
       <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-47-inversion.cpp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-59-tous-pairs.cpp" afterDir="false" />
@@ -35,12 +36,36 @@
       <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-24-boucle-for-2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-4e92ebf7aa70b8cb13b7.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-05T12-28-59-0032.json" beforeDir="false" />
+||||||| 3935752
+    <list default="true" id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-23-boucle-for-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-24-boucle-for-2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-4e92ebf7aa70b8cb13b7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-05T12-28-59-0032.json" beforeDir="false" />
+=======
+    <list default="true" id="59b24ba6-0092-45d8-bf3a-0ef87343dd3a" name="Changes" comment="test pc portable">
+      <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-47-inversion.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercice-recueil-taillard/exercice-59-tous-pairs.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nicolet-labo16/nicolet-labo16.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-0b80d1a26084b1a613ee.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-df69f7c16c64e0a04dde.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-11T12-24-04-0539.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PRG1-Debug-ea962a8d4db16a38a688.json" beforeDir="false" />
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PRG1.dir/BS-code.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PRG1.dir/BS-code.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/PRG1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/PRG1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +83,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -71,6 +97,20 @@
   </component>
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="413acd3a-c8a8-46df-a61c-a8e71629389d" />
+  </component>
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
       <scroll-view-position x="0" y="0" />
@@ -94,10 +134,16 @@
   </component>
   <component name="PropertiesComponent">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
@@ -106,14 +152,26 @@
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/nicolet-labo16" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
 =======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2021-2022/PRG1" />
+||||||| 3935752
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../2021-2022/PRG1" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nicolet-labo16" />
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
     <property name="nodejs_package_manager_path" value="npm" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+=======
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
   </component>
   <component name="RunManager">
     <configuration name="PRG1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PRG1" TARGET_NAME="PRG1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PRG1" RUN_TARGET_NAME="PRG1">
@@ -153,6 +211,7 @@
       <workItem from="1664871691025" duration="5137000" />
       <workItem from="1664877113904" duration="475000" />
       <workItem from="1664958499967" duration="4552000" />
+<<<<<<< HEAD
 <<<<<<< HEAD
       <workItem from="1664967094047" duration="5297000" />
       <workItem from="1664993153703" duration="1955000" />
@@ -219,13 +278,84 @@
 =======
       <workItem from="1664967094047" duration="6140000" />
       <workItem from="1665400489911" duration="3787000" />
+||||||| 3935752
+      <workItem from="1664967094047" duration="6140000" />
+      <workItem from="1665400489911" duration="3787000" />
+=======
+      <workItem from="1664967094047" duration="5297000" />
+      <workItem from="1664993153703" duration="1955000" />
+      <workItem from="1665568560955" duration="6379000" />
+      <workItem from="1665610215403" duration="25000" />
+      <workItem from="1665610264243" duration="2518000" />
+      <workItem from="1665614473136" duration="699000" />
+      <workItem from="1665747181036" duration="3098000" />
+      <workItem from="1665751240539" duration="3662000" />
+      <workItem from="1665839638978" duration="5336000" />
+      <workItem from="1665847746437" duration="85000" />
+      <workItem from="1665847976109" duration="564000" />
+      <workItem from="1666005671560" duration="3132000" />
+      <workItem from="1666081913230" duration="5528000" />
+      <workItem from="1666167749475" duration="4406000" />
+      <workItem from="1666177431429" duration="5016000" />
+      <workItem from="1666353935330" duration="1005000" />
+      <workItem from="1667219630793" duration="28000" />
+      <workItem from="1667295946153" duration="3564000" />
+      <workItem from="1667390937297" duration="2996000" />
+      <workItem from="1667899247912" duration="2336000" />
+      <workItem from="1667902258502" duration="154000" />
+      <workItem from="1668169227914" duration="4642000" />
+      <workItem from="1668429103397" duration="3908000" />
+      <workItem from="1668595515436" duration="966000" />
+      <workItem from="1668598381565" duration="24000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1665612246670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665612246670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1665612248817</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665612248817</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test sur labo10">
+      <created>1665615721039</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665615721039</updated>
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
+    </task>
+<<<<<<< HEAD
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+    <task id="LOCAL-00004" summary="test">
+      <created>1665616083455</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665616083455</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test pc portable">
+      <created>1665747263167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665747263167</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
@@ -239,11 +369,25 @@
   </component>
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
+<<<<<<< HEAD
 <<<<<<< HEAD
             <State>
               <option name="FILTERS">
@@ -261,11 +405,29 @@
 =======
             <State />
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+            <State />
+=======
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
           </value>
         </entry>
       </map>
     </option>
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -278,4 +440,16 @@
   </component>
 =======
 >>>>>>> 9f872fb6a6e9d9e53ab0c1eb99e9e72eac65d691
+||||||| 3935752
+=======
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/PRG1" />
+    </ignored-roots>
+    <MESSAGE value="test sur labo10" />
+    <MESSAGE value="test" />
+    <MESSAGE value="test pc portable" />
+    <option name="LAST_COMMIT_MESSAGE" value="test pc portable" />
+  </component>
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
 </project>

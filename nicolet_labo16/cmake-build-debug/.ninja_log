@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ninja log v5
 4	402	6903094922348433	CMakeFiles/nicolet_labo16.dir/nicolet_labo16.cpp.obj	80e8439cb810d640
 403	512	6903094923425316	nicolet_labo16.exe	59a3a3010e8d55d2
@@ -36,3 +37,10 @@
 365	472	6903300181872583	nicolet_labo16.exe	59a3a3010e8d55d2
 7	417	6903300347022131	CMakeFiles/nicolet_labo16.dir/nicolet_labo16.cpp.obj	3d8aa31683f68fdf
 418	521	6903300347998999	nicolet_labo16.exe	59a3a3010e8d55d2
+||||||| 3935752
+=======
+# ninja log v5
+4	402	6903094922348433	CMakeFiles/nicolet_labo16.dir/nicolet_labo16.cpp.obj	80e8439cb810d640
+403	512	6903094923425316	nicolet_labo16.exe	59a3a3010e8d55d2
+0	11	0	clean	b36a22149ba2b4e1
+>>>>>>> 631c032e69a5bf3a961bf46d33570e515767a618
