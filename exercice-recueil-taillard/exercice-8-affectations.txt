@@ -1,0 +1,43 @@
+8. Affectations Qu’imprime le programme suivant :
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+   {
+      double x;
+      int n, p;
+      p = 2;
+      x = 15 / p;
+      n = x + 0.5;
+      cout << p << ' ' << x << ' ' << n << endl;
+
+      2 7 7
+
+   }
+
+   {
+      double x;
+      int n, p;
+      p = 2;
+      x = 15. / p;
+      n = x + 0.5;
+      cout << p << ' ' << x << ' ' << n << endl;
+
+      2 7.5 8
+
+   }
+
+   {
+      int n, p;
+      double x;
+      n = 10;
+      p = 7;
+      x = 2.5;
+      cout << p << ' ' << x << ' ' << n << endl;
+
+      7 2.5 10
+
+   }
+}

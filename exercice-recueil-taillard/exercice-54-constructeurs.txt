@@ -1,0 +1,44 @@
+Constructeurs
+Qu’imprime le programme suivant, en supposant avoir supprimé les éventuelles lignes fautives.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+   string s = "ABC";
+
+   string s1(s, 1);
+   cout << '|' << s1 << '|' << endl;
+   // |BC|
+
+   string s2(s, 2, 3);
+   cout << '|' << s2 << '|' << endl;
+   // |C|
+
+   string s3(s, 3, 2);
+   cout << '|' << s3 << '|' << endl;
+   // ||
+
+   string s4(s, 4, 1);
+   cout << '|' << s4 << '|' << endl;
+   // out_of_range....
+
+   string s5("ABC", 3);
+   cout << '|' << s5 << '|' << endl;
+   // |ABC|
+
+   string s6("ABC", 4);
+   cout << '|' << s6 << '|' << endl;
+   // |ABC| (avec le 0 final)
+
+   string s7("ABC", 5);
+   cout << '|' << s7 << '|' << endl;
+   // |ABC0?|
+
+   string s8(3, 'A');
+   cout << '|' << s8 << '|' << endl;
+   // |AAA|
+
+}
