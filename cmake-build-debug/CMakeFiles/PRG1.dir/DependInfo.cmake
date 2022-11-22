@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp" "CMakeFiles/PRG1.dir/BS-code.cpp.obj" "gcc" "CMakeFiles/PRG1.dir/BS-code.cpp.obj.d"
+  "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/BS-code.cpp" "CMakeFiles/PRG1.dir/BS-code.cpp.obj" "gcc" "CMakeFiles/PRG1.dir/BS-code.cpp.obj.d"
   )
 
 # Targets to which this target links.
