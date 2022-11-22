@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug"
+			"value" : "c:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -707,7 +707,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1"
+			"value" : "C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1327,7 +1327,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug"
+			"value" : "C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/cmake-build-debug"
 		},
 		{
 			"name" : "PRG1_IS_TOP_LEVEL",
@@ -1351,7 +1351,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1"
+			"value" : "C:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1"
 		}
 	],
 	"kind" : "cache",

@@ -42,76 +42,76 @@ std::string plus(const std::string &lhs, const std::string &rhs);
 std::string fois(const std::string &lhs, const std::string &rhs);
 
 int main() {
-    size_t valeur1 = 128;
-    size_t valeur2 = 3;
+   size_t valeur1 = 128;
+   size_t valeur2 = 3;
 
-    std::string binValeur1 = construire(valeur1);
-    std::string binValeur2 = construire(valeur2);
+   std::string binValeur1 = construire(valeur1);
+   std::string binValeur2 = construire(valeur2);
 
-    std::cout << valeur1 << " convertie en binaire donne -> " << binValeur1 << std::endl;
-    std::cout << valeur2 << " convertie en binaire donne -> " << binValeur2 << std::endl;
+   std::cout << valeur1 << " convertie en binaire donne -> " << binValeur1 << std::endl;
+   std::cout << valeur2 << " convertie en binaire donne -> " << binValeur2 << std::endl;
 
-    std::cout << binValeur1 << " et " << binValeur2 << " ajuste donne ";
-    ajustement(binValeur1, binValeur2);
-    std::cout << binValeur1 << " et " << binValeur2 << std::endl;
+   std::cout << binValeur1 << " et " << binValeur2 << " ajuste donne ";
+   ajustement(binValeur1, binValeur2);
+   std::cout << binValeur1 << " et " << binValeur2 << std::endl;
 
 
-    std::cout << binValeur1 << " + " << binValeur2 << " = " << plus(binValeur1, binValeur2) << std::endl;
-    // faire une suite de fibo
+   std::cout << binValeur1 << " + " << binValeur2 << " = " << plus(binValeur1, binValeur2) << std::endl;
+   // faire une suite de fibo
 
-    std::cout << binValeur1 << " * " << binValeur2 << " = " << fois(binValeur1, binValeur2) << std::endl;
-    // faire une factorielle
+   std::cout << binValeur1 << " * " << binValeur2 << " = " << fois(binValeur1, binValeur2) << std::endl;
+   // faire une factorielle
 
 }
 
 std::string construire(size_t val) {
-    std::string construction;
-    while (val != 0) {
-        construction = (val % 2 != 0 ? "1" : "0") + construction;
-        val /= 2;
-    }
-    return construction;
+   std::string construction;
+   while (val != 0) {
+      construction = (val % 2 != 0 ? "1" : "0") + construction;
+      val /= 2;
+   }
+   return construction;
 }
 
 void ajustement(std::string &val1, std::string &val2) {
-    if (val1.size() < val2.size())
-        val1.insert(0, val2.size() - val1.size(), '0');
-    else
-        val2.insert(0, val1.size() - val2.size(), '0');
+   if (val1.size() < val2.size())
+      val1.insert(0, val2.size() - val1.size(), '0');
+   else
+      val2.insert(0, val1.size() - val2.size(), '0');
 }
 
 std::string plus(const std::string &lhs, const std::string &rhs) {
-    std::string somme;
-    int carry = 0;
-    for (size_t i = lhs.size() - 1; i != SIZE_MAX; --i) {
-        int ilhs = lhs[i] - '0', irhs = rhs[i] - '0';
-        int res = ilhs + irhs + carry;
-        if (res == 0 or res == 2)
-            somme = "0" + somme;
-        else
-            somme = "1" + somme;
-        carry = res > 1 ? 1 : 0;
-    }
-    if (carry == 1)
-        somme = "1" + somme;
+   std::string somme;
+   int carry = 0;
+   for (size_t i = lhs.size() - 1; i != SIZE_MAX; --i) {
+      int ilhs = lhs[i] - '0', irhs = rhs[i] - '0';
+      int res = ilhs + irhs + carry;
+      if (res == 0 or res == 2)
+         somme = "0" + somme;
+      else
+         somme = "1" + somme;
+      carry = res > 1 ? 1 : 0;
+   }
+   if (carry == 1)
+      somme = "1" + somme;
 
-    return somme;
+   return somme;
 }
 
 std::string fois(const std::string &lhs, const std::string &rhs) {
-    std::string produit;
-    int multiplication = 0;
-    for (size_t i = lhs.size() - 1; i != SIZE_MAX; --i) {
-        std::string produitTemp;
-        produitTemp.insert(0, multiplication, '0');
-        for (size_t j = lhs.size() - 1; j != SIZE_MAX; --j) {
-            int ilhs = lhs[j] - '0', irhs = rhs[i] - '0';
-            int res = ilhs * irhs;
-            produitTemp = res ? "1" + produitTemp : "0" + produitTemp;
-        }
-        multiplication++;
-        ajustement(produit, produitTemp);
-        produit = plus(produitTemp, produit);
-    }
-    return produit;
+   std::string produit;
+   int multiplication = 0;
+   for (size_t i = lhs.size() - 1; i != SIZE_MAX; --i) {
+      std::string produitTemp;
+      produitTemp.insert(0, multiplication, '0');
+      for (size_t j = lhs.size() - 1; j != SIZE_MAX; --j) {
+         int ilhs = lhs[j] - '0', irhs = rhs[i] - '0';
+         int res = ilhs * irhs;
+         produitTemp = res ? "1" + produitTemp : "0" + produitTemp;
+      }
+      multiplication++;
+      ajustement(produit, produitTemp);
+      produit = plus(produitTemp, produit);
+   }
+   return produit;
 }
