@@ -13,48 +13,43 @@
 #include <vector>
 
 /**
- * Cette fonction permet de transformer en base 2 un size_t donné
- * @param val permet de connaître la valeur du size_t à mettre en base 2
- * @return un string de la valeur du size_t en base 2
- */
-std::string baseDeux(size_t val);
-
-/**
  *
  * @param val
  * @param base
+ * @param typo
  * @return
  */
-std::string changementBase(size_t val, size_t base = 10);
+std::string changementBase(size_t val, size_t base = 10, size_t typo = 0);
+
+std::vector<std::string> defaut = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"};
+std::vector<std::string> nombre = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"};
+std::vector<std::string> nombre = {"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"};
+
 
 int main() {
-   size_t valeurUtilisateur;
-   size_t baseUtilisateur;
+   size_t valeurUtilisateur, baseUtilisateur, typoUtilisateur;
    std::cout << "Donner un nombre et la base dans la quelle vous voulez le transformer\n"
-             << "sous le format 1234(nombre a convertir) 2(base) : ";
-   std::cin >> valeurUtilisateur >> baseUtilisateur;
+             << "sous le format 1234(valeur) 2a20(base) 0a2(typo): ";
+   std::cin >> valeurUtilisateur >> baseUtilisateur >> typoUtilisateur;
 
-   std::string test2 = changementBase(valeurUtilisateur, baseUtilisateur);
-   std::cout << test2;
+   if (valeurUtilisateur < 2 or valeurUtilisateur > 20) {
+      std::cout << "Erreur: base invalide";
+      return 0;
+   } else if (typoUtilisateur < 0 or typoUtilisateur > 3) {
+      std::cout << "Table de correspondance non disponible";
+      return 0;
+   }
+
+   std::string test = changementBase(valeurUtilisateur, baseUtilisateur, typoUtilisateur);
 
    return 0;
-
 }
 
-std::string baseDeux(size_t val) {
-   std::string str;
-   while (val != 0) {
-      str = (val % 2 != 0 ? "1" : "0") + str;
-      val /= 2;
-   }
-   return str;
-}
 
-std::string changementBase(size_t val, size_t base) {
+std::string changementBase(size_t val, size_t base, size_t typo) {
    std::string str;
-   while (!(val / base)) {
-      str = (val % base) + str;
-      val /= base;
+   while (val / base) {
+
    }
    return str;
 }
