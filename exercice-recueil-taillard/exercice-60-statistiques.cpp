@@ -1,4 +1,9 @@
-//
-// Created by lord on 21.11.2022.
-//
+#include <iostream>
+#include <vector>
+
+int main() {
+
+}
+
+
 
