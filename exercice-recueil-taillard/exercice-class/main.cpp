@@ -1,18 +1,24 @@
-#include <iostream>
+#include "Point.h"
+#include "Point.cpp"
 
-class Point {
-public:
-   Point(double x, double y) {
-      this->pointX = x;
-      this->pointY = y;
-   }
-
-
-private:
-   double pointX, pointY;
-};
+Point pointSymetrique(const Point &point);
 
 int main() {
    double coordonneeX = 0.0, coordonneeY = 0.0;
-   Point(coordonneeX, coordonneeY);
+   Point coordonee(coordonneeX, coordonneeY);
+   coordonee.printX();
+   coordonee.printY();
+   coordonee.replaceX(3.5);
+   coordonee.replaceY(4.5);
+   coordonee.printX();
+   coordonee.printY();
+   coordonee.deplaceXY(0.5, 1.5);
+   coordonee.printX();
+   coordonee.printY();
+
+   return 0;
+}
+
+Point pointSymetrique(const Point &point) {
+
 }

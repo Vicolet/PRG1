@@ -1,6 +1,0 @@
-#ifndef EXERCICE_CLASS_MAIN_H
-#define EXERCICE_CLASS_MAIN_H
-
-
-
-#endif //EXERCICE_CLASS_MAIN_H
