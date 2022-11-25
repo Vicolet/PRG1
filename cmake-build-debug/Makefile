@@ -128,30 +128,6 @@ PRG1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/build
 .PHONY : PRG1/fast
 
-exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.obj: exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.obj
-.PHONY : exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.obj
-
-# target to build an object file
-exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.obj
-.PHONY : exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.obj
-
-exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.i: exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.i
-.PHONY : exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.i
-
-# target to preprocess a source file
-exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.i
-.PHONY : exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.i
-
-exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.s: exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.s
-.PHONY : exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.s
-
-# target to generate assembly for a file
-exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.s
-.PHONY : exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +137,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PRG1
-	@echo ... exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.obj
-	@echo ... exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.i
-	@echo ... exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.s
 .PHONY : help
 
 

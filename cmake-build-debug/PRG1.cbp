@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-62-liste-de-nombre-premiers.cpp">
+		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-class">
 			<Option target="PRG1"/>
 		</Unit>
 		<Unit filename="C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/CMakeLists.txt">
