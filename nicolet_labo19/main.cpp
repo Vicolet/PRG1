@@ -13,16 +13,14 @@
 std::string readFile(const std::string &fileName);
 
 int main() {
-   std::string nomFichier = "la_comedie_humaine.txt";
-   std::string fichier = readFile(nomFichier);
-   size_t index = 0;
-   int compteur = 0;
-   while ((index = fichier.find(' ', index + 1)) != std::string::npos) {
-      compteur++;
+   std::string fichier = readFile("text_test.txt");
+   std::vector<Mot> Dictionnaire;
+   for (size_t i = 0, j = 0; i < fichier.size(); ++i) {
+      if (fichier.at(i) == ' ') {
+         Mot m = fichier.substr(j, i - j);
+         dichotomi(Dictionnaire, m);
+      }
    }
-   std::cout << compteur << std::endl;
-   std::vector<Mot> vectorMot;
-   
 }
 
 std::string readFile(const std::string &fileName) {
@@ -36,4 +34,3 @@ std::string readFile(const std::string &fileName) {
    input_file.close();
    return file;
 }
-

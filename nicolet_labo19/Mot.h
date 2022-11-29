@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
+#include "Mot.cpp"
 
 #ifndef NICOLET_LABO19_MOT_H
 #define NICOLET_LABO19_MOT_H
