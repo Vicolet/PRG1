@@ -20,5 +20,5 @@ int main() {
 }
 
 Point pointSymetrique(const Point &point) {
-
+   return {};
 }
