@@ -11,6 +11,7 @@
 #define NICOLET_LABO18_NICOLET_LABO18_H
 
 class Mot {
+
 public:
    void add() {
       redondance += 1;
