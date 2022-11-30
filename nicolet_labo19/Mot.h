@@ -13,17 +13,26 @@
 
 class Mot {
 public:
+   Mot(std::string mot) {
+      this->mot = mot;
+      redondance = 1;
+   }
+
    void add() {
       redondance += 1;
    }
 
-   Mot(std::string mot) {
-      this->mot = mot;
+   std::string getMot() {
+      return mot;
+   }
+
+   size_t getRedondance(){
+      return redondance;
    }
 
 private:
    std::string mot;
-   int redondance = 0;
+   size_t redondance;
 };
 
 #endif //NICOLET_LABO19_MOT_H

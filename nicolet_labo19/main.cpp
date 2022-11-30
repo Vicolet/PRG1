@@ -12,15 +12,25 @@
 
 std::string readFile(const std::string &fileName);
 
+size_t dichotomie(std::vector<Mot> dico, Mot mot);
+
+void afficheDico(std::vector<Mot> dico);
+
 int main() {
    std::string fichier = readFile("text_test.txt");
-   std::vector<Mot> Dictionnaire;
+   //
+   std::vector<Mot> dictionnaire;
    for (size_t i = 0, j = 0; i < fichier.size(); ++i) {
+
       if (fichier.at(i) == ' ') {
-         Mot m = fichier.substr(j, i - j);
-         dichotomi(Dictionnaire, m);
+         Mot mot = fichier.substr(j, i - j);
+         //traiter le mot
+         size_t pos = dichotomie(dictionnaire, mot);
+         dictionnaire.insert(dictionnaire.begin() + pos, mot);
+         j = i;
       }
    }
+   afficheDico(dictionnaire);
 }
 
 std::string readFile(const std::string &fileName) {
@@ -33,4 +43,26 @@ std::string readFile(const std::string &fileName) {
    std::getline(input_file, file, '\0');
    input_file.close();
    return file;
+}
+
+size_t dichotomie(std::vector<Mot> dico, Mot mot) {
+   size_t min = 0;
+   size_t max = dico.size();
+   while (0 != (max - min)) {
+      size_t pos = (max + min) / 2;
+      if (mot.getMot() < dico.at(pos).getMot())
+         max = pos;
+      else if (mot.getMot() > dico.at(pos).getMot())
+         min = pos + 1;
+      else
+         return pos;
+   }
+   return 0;
+}
+
+void afficheDico(std::vector<Mot> dico) {
+   for (Mot i: dico) {
+      std::cout << i.getMot() << " : " << i.getRedondance() << std::endl;
+
+   }
 }
