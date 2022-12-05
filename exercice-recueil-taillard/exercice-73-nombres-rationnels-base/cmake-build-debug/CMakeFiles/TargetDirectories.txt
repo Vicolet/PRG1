@@ -1,0 +1,3 @@
+C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-73-nombres-rationnels-base/cmake-build-debug/CMakeFiles/exercice_73_nombres_rationnels_base.dir
+C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-73-nombres-rationnels-base/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-73-nombres-rationnels-base/cmake-build-debug/CMakeFiles/rebuild_cache.dir

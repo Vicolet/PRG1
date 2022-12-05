@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "exercice_73_nombres_rationnels_base",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "exercice_73_nombres_rationnels_base::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exercice_73_nombres_rationnels_base-Debug-cbc4f4380bf442c95a1b.json",
+					"name" : "exercice_73_nombres_rationnels_base",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-73-nombres-rationnels-base/cmake-build-debug",
+		"source" : "C:/Users/41788/OneDrive/HEIG-VD/2022-2023/PRG1/exercice-recueil-taillard/exercice-73-nombres-rationnels-base"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
