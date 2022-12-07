@@ -56,10 +56,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1
+CMAKE_SOURCE_DIR = C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -86,9 +86,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ PRG1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/build
 .PHONY : PRG1/fast
 
+BS-code.obj: BS-code.cpp.obj
+.PHONY : BS-code.obj
+
+# target to build an object file
+BS-code.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.obj
+.PHONY : BS-code.cpp.obj
+
+BS-code.i: BS-code.cpp.i
+.PHONY : BS-code.i
+
+# target to preprocess a source file
+BS-code.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.i
+.PHONY : BS-code.cpp.i
+
+BS-code.s: BS-code.cpp.s
+.PHONY : BS-code.s
+
+# target to generate assembly for a file
+BS-code.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PRG1.dir\build.make CMakeFiles/PRG1.dir/BS-code.cpp.s
+.PHONY : BS-code.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -137,6 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PRG1
+	@echo ... BS-code.obj
+	@echo ... BS-code.i
+	@echo ... BS-code.s
 .PHONY : help
 
 

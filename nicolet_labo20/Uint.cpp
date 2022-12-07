@@ -54,28 +54,42 @@ Uint Uint::addition(Uint terme) {
 
 Uint Uint::soustraction(Uint terme) {
    Uint difference;
-   if (valString.size() < terme.valString.size())
-      return difference.valString = ""
 
-   return Uint();
+   bool carry = false;
+   if (valString.size() < terme.valString.size()){
+      difference.valString = "erreur";
+      return difference;
+   }
+   this->ajustement(terme);
+   for (int i = valString.size() -1 ; i>= 0; --i){
+      difference.valString[i] = valString[i] - terme.valString[i] + int('0');
+      if (carry){
+         difference.valString[i]-1;
+      }
+      if (difference.valString[i]==-1){
+         difference.valString[i]+2;
+         carry = true;
+      }
+   }
+   return difference;
 }
 
 Uint Uint::multiplication(Uint facteur) {
-   Uint produit;
-   int multiplication = 0;
-   for (size_t i = valString.size() - 1; i != SIZE_MAX; --i) {
-      std::string produitTemp;
-      produitTemp.insert(0, multiplication, '0');
-      for (size_t j = valString.size() - 1; j != SIZE_MAX; --j) {
-         int ilhs = valString[j] - '0', irhs = facteur.valString[i] - '0';
-         int res = ilhs * irhs;
-         produitTemp = res ? "1" + produitTemp : "0" + produitTemp;
-      }
-      multiplication++;
-      ajustement(produit, produitTemp);
-      produit = addition(produitTemp, produit);
-   }
-   return produit;
+//   Uint produit;
+//   int multiplication = 0;
+//   for (size_t i = valString.size() - 1; i != SIZE_MAX; --i) {
+//      std::string produitTemp;
+//      produitTemp.insert(0, multiplication, '0');
+//      for (size_t j = valString.size() - 1; j != SIZE_MAX; --j) {
+//         int ilhs = valString[j] - '0', irhs = facteur.valString[i] - '0';
+//         int res = ilhs * irhs;
+//         produitTemp = res ? "1" + produitTemp : "0" + produitTemp;
+//      }
+//      multiplication++;
+//      ajustement(produit, produitTemp);
+//      produit = addition(produitTemp, produit);
+//   }
+//   return produit;
 }
 
 Uint Uint::division(Uint dividende) {

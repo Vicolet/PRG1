@@ -13,7 +13,7 @@
 #include "Uint.cpp"
 
 int main() {
-   std::uint64_t valTest1 = 12, valTest2 = 6, valTestErreur = 0;
+   std::uint64_t valTest1 = 3, valTest2 = 1, valTestErreur = 0;
 
    Uint val1(valTest1);
    Uint val2(valTest2);
@@ -21,6 +21,8 @@ int main() {
 
    Uint testAdd = val1.addition(val2);
    testAdd.affiche();
+   Uint testSub = val1.soustraction(val2);
+   testSub.affiche();
 
    return 0;
 }
