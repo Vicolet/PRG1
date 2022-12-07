@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E rm
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1
+CMAKE_SOURCE_DIR = C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PRG1.dir/depend.make
@@ -73,6 +73,6 @@ CMakeFiles/PRG1.dir/clean:
 .PHONY : CMakeFiles/PRG1.dir/clean
 
 CMakeFiles/PRG1.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1 C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1 C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug C:\Users\41788\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles\PRG1.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1 C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1 C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug C:\Users\victo\OneDrive\Documents\OneDrive\HEIG-VD\2022-2023\PRG1\cmake-build-debug\CMakeFiles\PRG1.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PRG1.dir/depend
 

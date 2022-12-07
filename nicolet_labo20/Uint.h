@@ -23,13 +23,15 @@ public:
 
    void affiche();
 
+   void ajustement(Uint &comparer);
+
    Uint addition(Uint terme);
 
-   Uint soustraction(Uint terme1, Uint terme2);
+   Uint soustraction(Uint terme1);
 
-   Uint multiplication(Uint facteur1, Uint facteur2);
+   Uint multiplication(Uint facteur);
 
-   Uint division(Uint dividende, Uint diviseur);
+   Uint division(Uint dividende);
 
 private:
    std::string valString;

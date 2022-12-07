@@ -26,32 +26,60 @@ void Uint::affiche() {
    std::cout << this->valString << std::endl;
 }
 
+void Uint::ajustement(Uint &comparer) {
+   if (valString.size() < comparer.valString.size())
+      valString.insert(0, comparer.valString.size() - valString.size(), '0');
+   else
+      comparer.valString.insert(0, valString.size() - comparer.valString.size(), '0');
+}
+
 Uint Uint::addition(Uint terme) {
-   Uint resultat;
+   Uint somme;
+   this->ajustement(terme);
    int carry = 0;
    for (size_t i = valString.size() - 1; i != SIZE_MAX; --i) {
       int ilhs = valString[i] - '0', irhs = terme.valString[i] - '0';
       int res = ilhs + irhs + carry;
       if (res == 0 or res == 2)
-         resultat.valString = "0" + resultat.valString;
+         somme.valString = "0" + somme.valString;
       else
-         resultat.valString = "1" + resultat.valString;
+         somme.valString = "1" + somme.valString;
       carry = res > 1 ? 1 : 0;
    }
    if (carry == 1)
-      resultat.valString = "1" + resultat.valString;
+      somme.valString = "1" + somme.valString;
 
-   return resultat;
+   return somme;
 }
 
-Uint Uint::soustraction(Uint terme1, Uint terme2) {
+Uint Uint::soustraction(Uint terme) {
+   Uint difference;
+   if (valString.size() < terme.valString.size())
+      return difference.valString = ""
+
    return Uint();
 }
 
-Uint Uint::multiplication(Uint facteur1, Uint facteur2) {
+Uint Uint::multiplication(Uint facteur) {
+   Uint produit;
+   int multiplication = 0;
+   for (size_t i = valString.size() - 1; i != SIZE_MAX; --i) {
+      std::string produitTemp;
+      produitTemp.insert(0, multiplication, '0');
+      for (size_t j = valString.size() - 1; j != SIZE_MAX; --j) {
+         int ilhs = valString[j] - '0', irhs = facteur.valString[i] - '0';
+         int res = ilhs * irhs;
+         produitTemp = res ? "1" + produitTemp : "0" + produitTemp;
+      }
+      multiplication++;
+      ajustement(produit, produitTemp);
+      produit = addition(produitTemp, produit);
+   }
+   return produit;
+}
+
+Uint Uint::division(Uint dividende) {
    return Uint();
 }
 
-Uint Uint::division(Uint dividende, Uint diviseur) {
-   return Uint();
-}
+
