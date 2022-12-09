@@ -23,4 +23,5 @@ void Point::deplaceXY(double deltaX, double deltaY) {
 
 void Point::distance(double point) {
 
+
 }
