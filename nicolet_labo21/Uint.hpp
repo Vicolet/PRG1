@@ -1,5 +1,5 @@
 /**
- * Nom du fichier  : main.cpp
+ * Nom du fichier  : Uint.hpp
  * Auteur(s)       : Victor Nicolet <victor.nicolet@heig-vd.ch>
  * Date creation   : 2022-12-12
  * Laboratoire n°  : 21
@@ -21,6 +21,32 @@ public:
 
    Uint(std::uint64_t val);
 
+   Uint &operator+=(const Uint &add);
+
+   friend Uint operator+(const Uint &terme1, const Uint &terme2) { return (terme1 += terme2); }
+
+   Uint operator-=(const Uint &sub);
+
+   friend Uint operator-(const Uint &terme1, const Uint &terme2) {
+      Uint tmp = terme1;
+      tmp -= terme2;
+      return tmp;
+   }
+
+   Uint operator*=(const Uint &mul);
+
+   friend Uint operator*(const Uint &facteur1, const Uint &facteur2) { return (facteur1 *= facteur2);}
+
+   Uint operator/=(const Uint &div);
+
+   friend Uint operator/(const Uint &dividende, const Uint &diviseur) { return (dividende /= diviseur); }
+
+   Uint operator%=(const Uint &mod);
+
+   friend Uint operator%(const Uint &dividende, const Uint &diviseur) { return (dividende %= diviseur); }
+
+
+
    void affiche();
 
    void ajustement(Uint &comparer);
@@ -29,12 +55,12 @@ public:
 
    Uint soustraction(Uint terme1);
 
-   Uint multiplication(Uint facteur);
+   Uint multipication(Uint facteur);
 
    Uint division(Uint dividende);
 
 private:
-   std::string valString;
+   std::string str;
 };
 
 
