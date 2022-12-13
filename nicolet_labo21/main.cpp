@@ -12,7 +12,7 @@
 #include "Uint.cpp"
 
 int main() {
-   std::uint64_t valTest1 = 3, valTest2 = 2, valTestErreur = 0;
+   std::uint64_t valTest1 = 16, valTest2 = 2, valTestErreur = 0;
 
    Uint val1(valTest1);
    Uint val2(valTest2);

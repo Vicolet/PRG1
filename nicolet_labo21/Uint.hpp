@@ -23,9 +23,13 @@ public:
 
    Uint &operator+=(const Uint &add);
 
-   friend Uint operator+(const Uint &terme1, const Uint &terme2) { return (terme1 += terme2); }
+   friend Uint operator+(const Uint &terme1, const Uint &terme2) {
+      Uint tmp = terme1;
+      tmp += terme2;
+      return tmp;
+   }
 
-   Uint operator-=(const Uint &sub);
+   Uint &operator-=(const Uint &sub);
 
    friend Uint operator-(const Uint &terme1, const Uint &terme2) {
       Uint tmp = terme1;
@@ -33,23 +37,35 @@ public:
       return tmp;
    }
 
-   Uint operator*=(const Uint &mul);
+   Uint &operator*=(const Uint &mul);
 
-   friend Uint operator*(const Uint &facteur1, const Uint &facteur2) { return (facteur1 *= facteur2);}
+   friend Uint operator*(const Uint &facteur1, const Uint &facteur2) {
+      Uint tmp = facteur1;
+      tmp *= facteur2;
+      return tmp;
+   }
 
-   Uint operator/=(const Uint &div);
+   Uint &operator/=(const Uint &div);
 
-   friend Uint operator/(const Uint &dividende, const Uint &diviseur) { return (dividende /= diviseur); }
+   friend Uint operator/(const Uint &dividende, const Uint &diviseur) {
+      Uint tmp = dividende;
+      tmp /= diviseur;
+      return tmp;
+   }
 
-   Uint operator%=(const Uint &mod);
+   Uint &operator%=(const Uint &mod);
 
-   friend Uint operator%(const Uint &dividende, const Uint &diviseur) { return (dividende %= diviseur); }
-
-
+   friend Uint operator%(const Uint &dividende, const Uint &diviseur) {
+      Uint tmp = dividende;
+      tmp %= diviseur;
+      return tmp;
+   }
 
    void affiche();
 
    void ajustement(Uint &comparer);
+
+   void enleveZero();
 
    Uint addition(Uint terme);
 

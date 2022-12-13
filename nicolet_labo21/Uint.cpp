@@ -38,11 +38,12 @@ Uint &Uint::operator+=(const Uint &add) {
    }
    if (carry == 1)
       somme.str = "1" + somme.str;
+   somme.enleveZero();
 
    return (*this = somme);
 }
 
-Uint Uint::operator-=(const Uint &soustraction) {
+Uint &Uint::operator-=(const Uint &soustraction) {
    Uint result;
    int carry = 0;
    //todo gérer les soustractions par des nombres plus grands 8-7.
@@ -52,15 +53,17 @@ Uint Uint::operator-=(const Uint &soustraction) {
       int y = soustraction.str[i] - '0';
       int z = x - y - carry;
       carry = z < 0 ? 1 : 0;
-      if (z < 0) z += 2;
+      if (z < 0)
+         z += 2;
       result.str.insert(0, 1, z + '0');
    }
-   if (carry == 1) result.str.insert(0, 1, '1');
-
-   return result;
+   if (carry == 1)
+      result.str.insert(0, 1, '1');
+   result.enleveZero();
+   return (*this = result);
 }
 
-Uint Uint::operator*=(const Uint &mul) {
+Uint &Uint::operator*=(const Uint &mul) {
 
    Uint chiffre;
    Uint carry;
@@ -90,12 +93,11 @@ Uint Uint::operator*=(const Uint &mul) {
    for (auto i = 0; i <= taille - 1; i++) {
       int sum = chiffre.str.at(i) + carry.str.at(i) + carrFlag;
       result.str.push_back(sum % 1);
-      carrFlag = sum / 10;
+      carrFlag = sum / 1;
    }
 
    return (*this = result);
 }
-
 
 void Uint::affiche() {
    std::cout << this->str << std::endl;
@@ -106,6 +108,10 @@ void Uint::ajustement(Uint &comparer) {
       str.insert(0, comparer.str.size() - str.size(), '0');
    else
       comparer.str.insert(0, str.size() - comparer.str.size(), '0');
+}
+
+void Uint::enleveZero() {
+   this->str.erase(0, std::min(this->str.find_first_not_of('0'), this->str.size()-1));
 }
 
 Uint Uint::addition(Uint terme) {
@@ -140,31 +146,37 @@ Uint Uint::soustraction(Uint terme) {
       result.str.insert(0, 1, z + '0');
    }
    if (carry == 1) result.str.insert(0, 1, '1');
-
+   result.enleveZero();
    return result;
 }
 
 Uint Uint::multipication(Uint facteur) {
+   //this->ajustement(facteur);
    Uint produit;
-   int mul = 0;
-   for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
+   int multiplication = 0;
+   for (size_t i = this->str.size() - 1; i != SIZE_MAX; --i) {
       Uint produitTemp;
-      produitTemp.str.insert(0, mul, '0');
-      for (size_t j = str.size() - 1; j != SIZE_MAX; --j) {
-         int ilhs = str[j] - '0', irhs = facteur.str[i] - '0';
+      produitTemp.str.insert(0, multiplication, '0');
+      for (size_t j = this->str.size() - 1; j != SIZE_MAX; --j) {
+         int ilhs = this->str[j] - '0', irhs = facteur.str[i] - '0';
          int res = ilhs * irhs;
          produitTemp.str = res ? "1" + produitTemp.str : "0" + produitTemp.str;
       }
-      mul++;
+      multiplication++;
       produit.ajustement(produitTemp);
-      produit.addition(produitTemp);
+      produit += produitTemp;
    }
+   produit.enleveZero();
    return produit;
 }
 
 Uint Uint::division(Uint dividende) {
    return Uint();
 }
+
+
+
+
 
 
 
