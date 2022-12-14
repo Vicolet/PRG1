@@ -18,66 +18,32 @@
 class Uint {
 public:
    Uint();
-
    Uint(std::uint64_t val);
 
    Uint &operator+=(const Uint &add);
-
-   friend Uint operator+(const Uint &terme1, const Uint &terme2) {
-      Uint tmp = terme1;
-      tmp += terme2;
-      return tmp;
-   }
-
    Uint &operator-=(const Uint &sub);
-
-   friend Uint operator-(const Uint &terme1, const Uint &terme2) {
-      Uint tmp = terme1;
-      tmp -= terme2;
-      return tmp;
-   }
-
    Uint &operator*=(const Uint &mul);
-
-   friend Uint operator*(const Uint &facteur1, const Uint &facteur2) {
-      Uint tmp = facteur1;
-      tmp *= facteur2;
-      return tmp;
-   }
-
    Uint &operator/=(const Uint &div);
-
-   friend Uint operator/(const Uint &dividende, const Uint &diviseur) {
-      Uint tmp = dividende;
-      tmp /= diviseur;
-      return tmp;
-   }
-
    Uint &operator%=(const Uint &mod);
 
-   friend Uint operator%(const Uint &dividende, const Uint &diviseur) {
-      Uint tmp = dividende;
-      tmp %= diviseur;
-      return tmp;
-   }
+   friend Uint operator+(Uint terme1, const Uint &terme2);
+   friend Uint operator-(Uint terme1, const Uint &terme2);
+   friend Uint operator*(Uint facteur1, const Uint &facteur2);
+   friend Uint operator/(Uint dividende, const Uint &diviseur);
+   friend Uint operator%(Uint dividende, const Uint &diviseur);
+
+   int operator<=>(const Uint &comparer);
+   bool operator==(const Uint &comparer);
 
    void affiche();
-
    void ajustement(Uint &comparer);
-
    void enleveZero();
 
-   Uint addition(Uint terme);
-
-   Uint soustraction(Uint terme1);
-
-   Uint multipication(Uint facteur);
-
    Uint division(Uint dividende);
+   int comparaison(Uint comparer);
 
 private:
    std::string str;
 };
-
 
 #endif //NICOLET_LABO21_UINT_HPP
