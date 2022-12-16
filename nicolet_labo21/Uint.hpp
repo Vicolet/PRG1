@@ -39,6 +39,9 @@ public:
    void ajustement(Uint &comparer);
    void enleveZero();
 
+   void fonctionBS(Uint &x);
+
+
    Uint division(Uint dividende);
    int comparaison(Uint comparer);
 

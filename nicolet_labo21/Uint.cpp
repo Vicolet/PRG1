@@ -83,10 +83,10 @@ Uint &Uint::operator*=(const Uint &mul) {
 
    this->ajustement(temp);
 
-   for (auto i = this->str.size() - 1; i != SIZE_MAX; --i) {
+   for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
       Uint produitTemp;
       produitTemp.str.insert(0, multiple, '0');
-      for (auto j = this->str.size() - 1; j != SIZE_MAX; --j) {
+      for (size_t j = str.size() - 1; j != SIZE_MAX; --j) {
          int ilhs = this->str[j] - '0', irhs = temp.str[i] - '0';
          int res = ilhs * irhs;
          produitTemp.str = res ? "1" + produitTemp.str : "0" + produitTemp.str;
@@ -100,7 +100,37 @@ Uint &Uint::operator*=(const Uint &mul) {
 }
 
 Uint &Uint::operator/=(const Uint &div) {
+   Uint quotient;
+   Uint reste = *this;
+   Uint temp = div;
 
+   if (temp == 0) {
+      quotient.str = "erreur";
+      return *this = quotient;
+   }
+
+   if (*this < temp)
+      return *this;
+
+   if (*this == 0) {
+      quotient.str = "0";
+      return *this = quotient;
+   }
+
+   temp.str.append(this->str.size() - temp.str.size(), '0'); //ajout de 0 à la fin de temp
+   // todo trouver la condition pour ma boucle for
+   while (reste >= temp) {
+      reste = *this;
+      if (*this < temp) {
+         quotient.str = '0' + quotient.str;
+      } else {
+         quotient.str = '1' + quotient.str;
+         *this -= temp;
+      }
+      temp.str.pop_back(); //enlève le dernier 0
+   }
+   quotient.enleveZero();
+   return *this = quotient;
 }
 
 Uint &Uint::operator%=(const Uint &mod) {
@@ -169,6 +199,10 @@ int Uint::comparaison(Uint comparer) {
       }
    }
    return 0;
+}
+
+void Uint::fonctionBS(Uint &x) {
+
 }
 
 

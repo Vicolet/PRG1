@@ -12,68 +12,18 @@
 #include "Uint.cpp"
 
 int main() {
-   std::uint64_t valTest1 = 2, valTest2 = 3, valTestErreur = 0;
+   uint64_t x = 18;
+   uint64_t y = 2;
 
-   Uint val1(valTest1);
-   Uint val2(valTest2);
-   Uint valErreur(valTestErreur);
+   Uint a(x);
+   Uint b(y);
 
-   std::cout << (Uint(2) < Uint(3)) << std::endl;
+   //addition OK
+   //soustraction OK
+   //multiplication OK
 
-//   std::cout << "test des valeurs d'additions : " << std::endl;
-//
-//   Uint testAdd = val1.addition(val2);
-//   std::cout << "membre ";
-//   testAdd.affiche();
-//
-//   Uint operateurPlusEgale = val1;
-//   operateurPlusEgale += val2;
-//   std::cout << "+= ";
-//   operateurPlusEgale.affiche();
-//
-//   Uint operateurPlus = val1 + val2;
-//   std::cout << "+ ";
-//   operateurPlus.affiche();
+   a /= b;
+   a.affiche();
 
-   std::cout << "test des valeurs de soustractions : " << std::endl;
 
-//   Uint testSub = val1.soustraction(val2);
-//   std::cout << "membre ";
-//   testSub.affiche();
-
-   Uint operateurMoinsEgale = val1;
-   operateurMoinsEgale -= val2;
-   std::cout << "-= ";
-   operateurMoinsEgale.affiche();
-
-   Uint operateurMoins = val1 - val2;
-   std::cout << "- ";
-   operateurMoins.affiche();
-
-//   std::cout << "test des valeurs de multiplications : " << std::endl;
-//
-//   Uint testMul = val1.multipication(val2);
-//   std::cout << "membre ";
-//   testMul.affiche();
-//
-//   Uint operateurFoisEgale = val1;
-//   operateurFoisEgale *= val2;
-//   std::cout << "*= ";
-//   operateurFoisEgale.affiche();
-//
-//   Uint operateurFois = val1 * val2;
-//   std::cout << "* ";
-//   operateurFois.affiche();
-
-//   std::cout << "test des valeurs de divisions : " << std::endl;
-//
-//   Uint testDiv = val1.division(val2);
-//   testDiv.affiche();
-//
-//   Uint operateurDiviserEgale = val1;
-//   operateurDiviserEgale /= val2;
-//   operateurDiviserEgale.affiche();
-//
-//   Uint operateurDiviser = val1 / val2;
-//   operateurDiviser.affiche();
 }
