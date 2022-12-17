@@ -17,36 +17,33 @@
 
 class Uint {
 public:
-   Uint();
-   Uint(std::uint64_t val);
+    Uint();
+    Uint(std::uint64_t val);
 
-   Uint &operator+=(const Uint &add);
-   Uint &operator-=(const Uint &sub);
-   Uint &operator*=(const Uint &mul);
-   Uint &operator/=(const Uint &div);
-   Uint &operator%=(const Uint &mod);
+    Uint &operator+=(const Uint &add);
+    Uint &operator-=(const Uint &sub);
+    Uint &operator*=(const Uint &mul);
+    Uint &operator/=(const Uint &div);
+    Uint &operator%=(const Uint &mod);
 
-   friend Uint operator+(Uint terme1, const Uint &terme2);
-   friend Uint operator-(Uint terme1, const Uint &terme2);
-   friend Uint operator*(Uint facteur1, const Uint &facteur2);
-   friend Uint operator/(Uint dividende, const Uint &diviseur);
-   friend Uint operator%(Uint dividende, const Uint &diviseur);
+    friend Uint operator+(Uint terme1, const Uint &terme2);
+    friend Uint operator-(Uint terme1, const Uint &terme2);
+    friend Uint operator*(Uint facteur1, const Uint &facteur2);
+    friend Uint operator/(Uint dividende, const Uint &diviseur);
+    friend Uint operator%(Uint dividende, const Uint &diviseur);
 
-   int operator<=>(const Uint &comparer);
-   bool operator==(const Uint &comparer);
+    int operator<=>(const Uint &comparer);
+    bool operator==(const Uint &comparer);
 
-   void affiche();
-   void ajustement(Uint &comparer);
-   void enleveZero();
+    void affiche();
+    void ajustement(Uint &comparer);
+    void enleveZero();
+    void divReste(const Uint &a, Uint &quotient, Uint &reste);
 
-   void fonctionBS(Uint &x);
-
-
-   Uint division(Uint dividende);
-   int comparaison(Uint comparer);
+    void fonctionBS(Uint &x);
 
 private:
-   std::string str;
+    std::string str;
 };
 
 #endif //NICOLET_LABO21_UINT_HPP
