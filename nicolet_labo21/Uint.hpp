@@ -14,36 +14,41 @@
 #include <iostream>
 #include <string>
 #include <cstdint>
+#include <cmath>
 
 class Uint {
 public:
-    Uint();
-    Uint(std::uint64_t val);
+   Uint();
 
-    Uint &operator+=(const Uint &add);
-    Uint &operator-=(const Uint &sub);
-    Uint &operator*=(const Uint &mul);
-    Uint &operator/=(const Uint &div);
-    Uint &operator%=(const Uint &mod);
+   Uint(std::uint64_t val);
 
-    friend Uint operator+(Uint terme1, const Uint &terme2);
-    friend Uint operator-(Uint terme1, const Uint &terme2);
-    friend Uint operator*(Uint facteur1, const Uint &facteur2);
-    friend Uint operator/(Uint dividende, const Uint &diviseur);
-    friend Uint operator%(Uint dividende, const Uint &diviseur);
+   Uint &operator+=(const Uint &add);
+   Uint &operator-=(const Uint &sub);
+   Uint &operator*=(const Uint &mul);
+   Uint &operator/=(const Uint &div);
+   Uint &operator%=(const Uint &mod);
 
-    int operator<=>(const Uint &comparer);
-    bool operator==(const Uint &comparer);
+   friend Uint operator+(Uint terme1, const Uint &terme2);
+   friend Uint operator-(Uint terme1, const Uint &terme2);
+   friend Uint operator*(Uint facteur1, const Uint &facteur2);
+   friend Uint operator/(Uint dividende, const Uint &diviseur);
 
-    void affiche();
-    void ajustement(Uint &comparer);
-    void enleveZero();
-    void divReste(const Uint &a, Uint &quotient, Uint &reste);
+   friend Uint operator%(Uint dividende, const Uint &diviseur);
+   int operator<=>(const Uint &comparer);
 
-    void fonctionBS(Uint &x);
+   bool operator==(const Uint &comparer);
+   explicit operator uint64_t() const;
+   friend std::ostream &operator<<(std::ostream &os, const Uint &rhs);
+
+   void affiche();
+   void ajustement(Uint &comparer);
+   void enleveZero();
+   void diviserReste(const Uint &a, Uint &quotient, Uint &reste);
+
+   void fonctionBS(Uint &x);
 
 private:
-    std::string str;
+   std::string str;
 };
 
 #endif //NICOLET_LABO21_UINT_HPP
