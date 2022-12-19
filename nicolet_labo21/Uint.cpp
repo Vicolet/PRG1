@@ -13,15 +13,6 @@
 
 Uint::Uint() = default;
 
-//Uint::Uint(std::uint64_t val) {
-//   std::string convertion;
-//   while (val != 0) {
-//      convertion = (val % 2 != 0 ? "1" : "0") + convertion;
-//      val /= 2;
-//   }
-//   this->str = convertion;
-//}
-
 Uint::Uint(std::uint64_t val) {
     do {
         this->str += (val & 1) ? '1' : '0';
@@ -30,14 +21,12 @@ Uint::Uint(std::uint64_t val) {
     std::reverse(this->str.begin(), this->str.end());
 }
 
-
 Uint::operator uint64_t() const {
     uint64_t result = 0;
     uint64_t base = 1;
     for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
-        if (str[i] == '1') {
+        if (str[i] == '1')
             result += base;
-        }
         base *= 2;
     }
     return result;
@@ -63,9 +52,9 @@ Uint &Uint::operator+=(const Uint &add) {
     }
     if (carry == 1)
         somme.str = "1" + somme.str;
-    somme.enleveZero();
 
-    return (*this = somme);
+    somme.enleveZero();
+    return *this = somme;
 }
 
 Uint &Uint::operator-=(const Uint &sub) {
@@ -91,6 +80,7 @@ Uint &Uint::operator-=(const Uint &sub) {
     }
     if (carry == 1)
         diff.str = "1" + diff.str;
+
     diff.enleveZero();
     return *this = diff;
 }
@@ -150,7 +140,7 @@ Uint operator/(Uint dividende, const Uint &diviseur) { return dividende /= divis
 
 Uint operator%(Uint dividende, const Uint &diviseur) { return dividende %= diviseur; }
 
-Uint operator<<(Uint decalage, const uint64_t &position) {return decalage <<= position;}
+Uint operator<<(Uint decalage, const uint64_t &position) { return decalage <<= position; }
 
 int Uint::operator<=>(const Uint &comparer) {
     if (this->str.size() > comparer.str.size())
@@ -183,8 +173,8 @@ void Uint::enleveZero() {
     this->str.erase(0, std::min(this->str.find_first_not_of('0'), this->str.size() - 1));
 }
 
-void Uint::diviserReste(const Uint &a, Uint &quotient, Uint &reste) {
-    Uint diviseur = a;
+void Uint::diviserReste(const Uint &div, Uint &quotient, Uint &reste) {
+    Uint diviseur = div;
     Uint dividende = *this;
 
     if (dividende.str == "0") {
@@ -202,7 +192,7 @@ void Uint::diviserReste(const Uint &a, Uint &quotient, Uint &reste) {
 
     diviseur.str.append(dividende.str.size() - diviseur.str.size(), '0');
 
-    while (!(diviseur < a)) {
+    while (!(diviseur < div)) {
         if ((dividende - diviseur).str != "erreur") {
             quotient.str = quotient.str + '1';
             dividende -= diviseur;
