@@ -7,7 +7,7 @@
 */
 
 #include <iostream>
-#include "prime.hpp"
+#include "Prime.hpp"
 #include "Uint.hpp"
 
 using namespace std;

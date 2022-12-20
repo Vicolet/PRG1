@@ -130,6 +130,22 @@ Uint &Uint::operator<<=(const uint64_t &lhs) {
     return *this;
 }
 
+Uint &Uint::operator++() { return *this += 1; }
+
+Uint Uint::operator++(int) {
+    Uint temp = *this;
+    ++*this;
+    return temp;
+}
+
+Uint &Uint::operator--() { return *this -= 1; }
+
+Uint Uint::operator--(int) {
+    Uint temp = *this;
+    --*this;
+    return temp;
+}
+
 Uint operator+(Uint terme1, const Uint &terme2) { return terme1 += terme2; }
 
 Uint operator-(Uint terme1, const Uint &terme2) { return terme1 -= terme2; }
@@ -210,31 +226,10 @@ void Uint::set_base(int base, int charactere) {
 }
 
 
+Base::Base(uint64_t) {
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+uint64_t Base::get_base() const {
+    return 0;
+}

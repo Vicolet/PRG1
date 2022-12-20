@@ -25,6 +25,7 @@ public:
     explicit operator uint64_t() const;
 
     friend std::ostream &operator<<(std::ostream &os, const Uint &rhs);
+    friend std::ostream &operator<<(std::ostream &os, const Base &rhs);
 
     //todo demander si les commentaires comme ça ça ne fait pas trop.
     /**
@@ -38,21 +39,16 @@ public:
      * @return nous retourne l'addition des deux Uint.
      */
     Uint &operator+=(const Uint &add);
-
-    /**
-     * @brief Fais la soustraction de deux Uint.
-     *
-     * Cette surcharge d'opérateur permet de faire la soustraction de deux Uint elle est constituer d'une boule for qui
-     *
-     *
-     * @param sub
-     * @return
-     */
     Uint &operator-=(const Uint &sub);
     Uint &operator*=(const Uint &mul);
     Uint &operator/=(const Uint &div);
     Uint &operator%=(const Uint &mod);
     Uint &operator<<=(const uint64_t &lhs);
+
+    Uint &operator++();
+    Uint operator++(int);
+    Uint &operator--();
+    Uint operator--(int);
 
     friend Uint operator+(Uint terme1, const Uint &terme2);
     friend Uint operator-(Uint terme1, const Uint &terme2);
@@ -61,8 +57,8 @@ public:
     friend Uint operator%(Uint dividende, const Uint &diviseur);
     friend Uint operator<<(Uint decalage, const uint64_t &position);
 
-    int operator<=>(const Uint &comparer);
 
+    int operator<=>(const Uint &comparer);
     bool operator==(const Uint &comparer);
 
     /**
@@ -93,6 +89,15 @@ public:
 
 private:
     std::string str;
+    static uint64_t base;
+};
+
+class Base{
+public:
+    Base(uint64_t);
+    uint64_t get_base() const;
+private:
+    uint64_t val;
 };
 
 #endif //NICOLET_LABO21_UINT_HPP
