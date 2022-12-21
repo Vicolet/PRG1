@@ -1,16 +1,3 @@
 # ninja log v5
-3	710	6931779278389272	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-710	804	6931779279301909	nicolet_labo21.exe	48cc6e894f0c29dc
-3	957	6931893683254315	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-957	1089	6931893684499265	nicolet_labo21.exe	48cc6e894f0c29dc
-3	806	6931894204388598	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-807	906	6931894205360476	nicolet_labo21.exe	48cc6e894f0c29dc
-3	877	6931900063894227	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-878	982	6931900064940788	nicolet_labo21.exe	48cc6e894f0c29dc
-2	785	6932535018103018	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-3	792	6932536236437542	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-793	886	6932536237350182	nicolet_labo21.exe	48cc6e894f0c29dc
-4	745	6932537026626071	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
-745	839	6932537027543670	nicolet_labo21.exe	48cc6e894f0c29dc
 3	713	6932543401074145	CMakeFiles/nicolet_labo21.dir/main.cpp.obj	80d290e39c66dca5
 713	805	6932543401976591	nicolet_labo21.exe	48cc6e894f0c29dc
