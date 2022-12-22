@@ -16,6 +16,9 @@
 #include <cstdint>
 #include <cmath>
 
+class Base{
+};
+
 class Uint {
 public:
     Uint();
@@ -57,9 +60,11 @@ public:
     friend Uint operator%(Uint dividende, const Uint &diviseur);
     friend Uint operator<<(Uint decalage, const uint64_t &position);
 
-
     int operator<=>(const Uint &comparer);
     bool operator==(const Uint &comparer);
+//    friend int operator<=>(const Uint &compare1, const Uint &compare2);
+//    friend int operator==(const Uint &compare1, const Uint &compare2);
+
 
     /**
      * Cette fonction permet d'ajuste la taille de deux Uint
@@ -89,15 +94,9 @@ public:
 
 private:
     std::string str;
-    static uint64_t base;
+    static uint64_t zeba;
 };
 
-class Base{
-public:
-    Base(uint64_t);
-    uint64_t get_base() const;
-private:
-    uint64_t val;
-};
+
 
 #endif //NICOLET_LABO21_UINT_HPP

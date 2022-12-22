@@ -21,6 +21,8 @@ Uint::Uint(std::uint64_t val) {
     std::reverse(this->str.begin(), this->str.end());
 }
 
+uint64_t Uint::zeba = 10;
+
 Uint::operator uint64_t() const {
     uint64_t result = 0;
     uint64_t base = 1;
@@ -142,7 +144,7 @@ Uint &Uint::operator--() { return *this -= 1; }
 
 Uint Uint::operator--(int) {
     Uint temp = *this;
-    --*this;
+    --(*this);
     return temp;
 }
 
@@ -159,15 +161,16 @@ Uint operator%(Uint dividende, const Uint &diviseur) { return dividende %= divis
 Uint operator<<(Uint decalage, const uint64_t &position) { return decalage <<= position; }
 
 int Uint::operator<=>(const Uint &comparer) {
-    if (this->str.size() > comparer.str.size())
+    if (str == "0" && comparer.str == "0") return 0;
+    if (str.size() > comparer.str.size())
         return 1;
-    else if (this->str.size() < comparer.str.size())
+    else if (str.size() < comparer.str.size())
         return -1;
     else {
-        for (size_t i = 0; i != str.size() - 1; ++i) {
-            if (this->str.at(i) < comparer.str.at(i))
+        for (int i = 0; i < str.size(); i++) {
+            if (str.at(i) < comparer.str.at(i))
                 return -1;
-            else if (this->str.at(i) > comparer.str.at(i))
+            else if (str.at(i) > comparer.str.at(i))
                 return 1;
         }
     }
@@ -177,6 +180,26 @@ int Uint::operator<=>(const Uint &comparer) {
 bool Uint::operator==(const Uint &comparer) {
     return *this <=> comparer == 0;
 }
+
+//int operator<=>(const Uint &compare1, const Uint &compare2) {
+//    if (compare2.str.size() > compare1.str.size())
+//        return 1;
+//    else if (compare2.str.size() < compare1.str.size())
+//        return -1;
+//    else {
+//        for (size_t i = 0; i >= compare2.str.size() - 1; ++i) {
+//            if (compare2.str.at(i) < compare1.str.at(i))
+//                return -1;
+//            else if (compare2.str.at(i) > compare1.str.at(i))
+//                return 1;
+//        }
+//    }
+//    return 0;
+//}
+//
+//int operator==(const Uint &compare1, const Uint &compare2) {
+//    return compare1 <=> compare2 == 0;
+//}
 
 void Uint::ajustement(Uint &comparer) {
     if (str.size() < comparer.str.size())
@@ -226,10 +249,10 @@ void Uint::set_base(int base, int charactere) {
 }
 
 
-Base::Base(uint64_t) {
 
-}
 
-uint64_t Base::get_base() const {
-    return 0;
-}
+
+
+
+
+
