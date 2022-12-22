@@ -3,6 +3,7 @@
 //
 
 #include "Prime.hpp"
+#include <bitset>
 
 Uint exponentiationModulaire(Uint base, Uint exposant, Uint modulo) {
     Uint r(1);
@@ -19,6 +20,11 @@ Uint exponentiationModulaire(Uint base, Uint exposant, Uint modulo) {
     return r;
 }
 
+/*auto gen_int1_3 = std::bind(std::uniform_int_distribution<uint64_t>(1, SIZE_MAX - 1),
+                            std::mt19937(987));*/
+
+
+
 bool prime(Uint nombrePremier) {
     if (nombrePremier < 2) {
         return false;
@@ -26,11 +32,12 @@ bool prime(Uint nombrePremier) {
     if (nombrePremier == 2) {
         return true;
     }
-    auto gen_int1_3 = std::bind(std::uniform_int_distribution<uint64_t>(1, uint64_t(nombrePremier - 1)),
-                                std::mt19937(987));
+
+    /*auto gen_int1_3 = std::bind(std::uniform_int_distribution<uint64_t>(1, uint64_t(nombrePremier - 1)),
+                                std::mt19937(987));*/
 
     for (uint64_t i = 0; i != 10; i++) {
-        Uint alea(gen_int1_3());
+        Uint alea = Uint::genere_uint_aleatoire(nombrePremier);
 
         if (exponentiationModulaire(alea, nombrePremier - 1, nombrePremier) != (1 % nombrePremier))
             return false;

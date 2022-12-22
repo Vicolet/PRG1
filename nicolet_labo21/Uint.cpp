@@ -10,6 +10,13 @@
 */
 
 #include "Uint.hpp"
+#include "Prime.hpp"
+#include <string>
+#include <cstdint>
+#include <cmath>
+#include <vector>
+#include <random>
+#include <functional>
 
 Uint::Uint() = default;
 
@@ -23,6 +30,8 @@ Uint::Uint(std::uint64_t val) {
 
 uint64_t Uint::zeba = 10;
 
+uint64_t Uint::table = 0;
+
 Uint::operator uint64_t() const {
     uint64_t result = 0;
     uint64_t base = 1;
@@ -35,7 +44,13 @@ Uint::operator uint64_t() const {
 }
 
 std::ostream &operator<<(std::ostream &os, const Uint &rhs) {
-    os << rhs.str;
+    os << rhs.change_base(Uint::get_base(), Uint::get_table());
+    Uint::table = 0;
+    Uint::zeba = 10;
+    return os;
+}
+
+std::ostream &operator<<(std::ostream &os, const Base &rhs) {
     return os;
 }
 
@@ -209,7 +224,11 @@ void Uint::ajustement(Uint &comparer) {
 }
 
 void Uint::enleveZero() {
-    this->str.erase(0, std::min(this->str.find_first_not_of('0'), this->str.size() - 1));
+    if (str == "0"){
+        str = "0";
+    }else{
+        this->str.erase(0, std::min(this->str.find_first_not_of('0'), this->str.size() - 1));
+    }
 }
 
 void Uint::diviserReste(const Uint &div, Uint &quotient, Uint &reste) {
@@ -244,15 +263,59 @@ void Uint::diviserReste(const Uint &div, Uint &quotient, Uint &reste) {
     reste = dividende;
 }
 
-void Uint::set_base(int base, int charactere) {
-
+Base set_base(uint64_t base, uint64_t charactere) {
+    Uint::zeba = base;
+    Uint::table = charactere;
+    return Base();
 }
 
+uint64_t Uint::get_base() {
+    return zeba;
+}
 
+uint64_t Uint::get_table() {
+    return table;
+}
 
+std::vector<std::string> nombre0 = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"};
+std::vector<std::string> nombre1 = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
+std::vector<std::string> nombre2 = {"zero ", "un ", "deux ", "trois ", "quatre ", "cinq ", "six ", "sept ", "huit ",
+                                    "neuf ",
+                                    "dix ", "onze ", "douze ", "treize ", "quatorze ", "quinze ", "seize ", "dix-sept ",
+                                    "dix-huit ", "dix-neuf "};
+std::vector<std::string> nombre3 = {"⓪", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩", "⑪", "⑫", "⑬", "⑭",
+                                    "⑮", "⑯", "⑰", "⑱", "⑲"};
+std::vector<std::string> nombre4 = {"⓿", "❶", "❷", "❸", "❹", "❺", "❻", "❼", "❽", "❾", "❿", "⓫", "⓬", "⓭", "⓮",
+                                    "⓯", "⓰", "⓱", "⓲", "⓳"};
 
+std::vector<std::vector<std::string>> typoChoix = {nombre0, nombre1, nombre2, nombre3, nombre4};
 
+std::string Uint::change_base(uint64_t base, uint64_t typo = 0) const {
 
+    std::string resultat;
+    Uint temp = *this;
+    while (temp != 0) {
+        resultat = typoChoix[typo][uint64_t(temp % base)] + resultat;
+        temp = temp / base;
+    }
+    return resultat;
+}
 
+auto gen_bit0_1 = std::bind(std::uniform_int_distribution<uint64_t>(0, 1), std::mt19937(987));
 
+Uint Uint::genere_uint_aleatoire(const Uint &premier) {
+    Uint resultat;
+    for (size_t i = premier.str.size() - 1; i != 0; --i) {
+        if (gen_bit0_1())
+            resultat.str = "1" + resultat.str;
+        else
+            resultat.str = "0" + resultat.str;
+    }
+    if (resultat == 0){
+        resultat.str = "1";
+        return resultat;
+    }
+    resultat.enleveZero();
+    return resultat;
+}
 

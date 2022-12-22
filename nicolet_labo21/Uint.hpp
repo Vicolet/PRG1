@@ -12,9 +12,6 @@
 #define NICOLET_LABO21_UINT_HPP
 
 #include <iostream>
-#include <string>
-#include <cstdint>
-#include <cmath>
 
 class Base{
 };
@@ -89,14 +86,25 @@ public:
      */
     void diviserReste(const Uint &div, Uint &quotient, Uint &reste);
 
-    void set_base(int base, int charactere);
+    friend Base set_base(uint64_t base, uint64_t charactere);
 
+    static uint64_t get_base();
+
+    static uint64_t get_table();
+
+    std::string change_base(uint64_t base, uint64_t typo) const;
+
+    static Uint genere_uint_aleatoire(const Uint &premier);
 
 private:
     std::string str;
     static uint64_t zeba;
+    static uint64_t table;
+
+
 };
 
-
+std::ostream &operator<<(std::ostream &os, const Base &rhs);
+Base set_base(uint64_t base, uint64_t charactere = 0);
 
 #endif //NICOLET_LABO21_UINT_HPP
