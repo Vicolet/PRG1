@@ -39,9 +39,9 @@ Uint factorielle(size_t n) {
 
 int main() {
 
-//    Uint a(3), b(2);
-//    Uint c = a + b;
-//    std::cout << c;
+    Uint a(4), b(2);
+    Uint c = a * b;
+    std::cout << c;
 
 //    Uint b(128);
 //    for (int i = 0; i < 100; ++i) {
@@ -56,7 +56,7 @@ int main() {
 //            std::cout << i << ", ";
 //    }
 
-
+/*
     Uint a(1313451), b(2341);
 
     clock_t addStart = clock();
@@ -103,9 +103,7 @@ int main() {
     clock_t modEnd = clock();
     double mod = (modEnd - modStart) / (double) CLOCKS_PER_SEC * 1000000;
     std::cout << "Tim to % : " << mod << " microseconde" << std::endl;
-
-
-
+*/
 /*
     clock_t start = clock();
 
@@ -211,5 +209,4 @@ int main() {
 
     return 0;
 */
-
 }

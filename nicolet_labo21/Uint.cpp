@@ -65,7 +65,6 @@ Uint &Uint::operator+=(const Uint &add) {
     for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
         int terme1 = str[i] - '0', terme2 = temp.str[i] - '0';
         int res = terme1 + terme2 + carry;
-        //somme.str = (res == 0 or res == 2) ? somme.str = "0" + somme.str : somme.str = "1" + somme.str;
         somme.str[i] = (res == 0 or res == 2) ? '0' : '1';
         carry = res > 1 ? 1 : 0;
     }
@@ -81,13 +80,13 @@ Uint &Uint::operator-=(const Uint &sub) {
     Uint temp = sub;
     int carry = 0;
 
-    // todo régler le problème de ce warning
     if (*this < temp) {
         this->str = "erreur";
         return *this;
     }
 
     this->ajustement(temp);
+    diff.str.resize(temp.str.size(), '0');
 
     for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
         int terme1 = str[i] - '0', terme2 = temp.str[i] - '0';
@@ -95,7 +94,7 @@ Uint &Uint::operator-=(const Uint &sub) {
         carry = res < 0 ? 1 : 0;
         if (res < 0)
             res += 2;
-        diff.str = res ? "1" + diff.str : "0" + diff.str;
+        diff.str[i] = res ? '1' : '0';
     }
     if (carry == 1)
         diff.str = "1" + diff.str;
@@ -116,10 +115,11 @@ Uint &Uint::operator*=(const Uint &mul) {
     for (size_t i = mul.str.size() - 1; i != SIZE_MAX; --i) {
         Uint tmp = *this;
         if (mul.str[i] == '1') {
-            tmp.str.insert(tmp.str.end(), multiple, '0');
+            //tmp.str.insert(tmp.str.end(), multiple, '0');
             produit += tmp;
         }
-        multiple++;
+        //multiple++;
+        tmp.str.push_back('0');
     }
     return *this = produit;
 }
@@ -208,6 +208,7 @@ void Uint::enleveZero() {
 void Uint::diviserReste(const Uint &div, Uint &quotient, Uint &reste) {
     Uint diviseur = div;
     Uint dividende = *this;
+//    Uint temp = quotient;
 
     if (dividende.str == "0") {
         quotient.str = "erreur";
@@ -223,6 +224,20 @@ void Uint::diviserReste(const Uint &div, Uint &quotient, Uint &reste) {
     }
 
     diviseur.str.append(dividende.str.size() - diviseur.str.size(), '0');
+//    temp.str.resize(this->str.size(), '0');
+
+//    size_t sup = temp.str.size();
+//    for (size_t i = 0; !(diviseur < div); ++i) {
+//        if ((dividende - diviseur).str != "erreur") {
+//            temp.str[i] = '1';
+//            dividende -= diviseur;
+//        } else {
+//            temp.str[i] = '0';
+//        }
+//        sup--;
+//        diviseur.str.pop_back();
+//    }
+
 
     while (!(diviseur < div)) {
         if ((dividende - diviseur).str != "erreur") {
@@ -253,19 +268,10 @@ uint64_t Uint::get_table() {
 
 std::vector<std::string> nombre0 = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"};
 std::vector<std::string> nombre1 = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
-std::vector<std::string> nombre2 = {"zero ", "un ", "deux ", "trois ", "quatre ", "cinq ", "six ", "sept ", "huit ",
-                                    "neuf ",
-                                    "dix ", "onze ", "douze ", "treize ", "quatorze ", "quinze ", "seize ", "dix-sept ",
-                                    "dix-huit ", "dix-neuf "};
-std::vector<std::string> nombre3 = {"⓪", "①", "②", "③", "④", "⑤", "⑥", "⑦", "⑧", "⑨", "⑩", "⑪", "⑫", "⑬", "⑭",
-                                    "⑮", "⑯", "⑰", "⑱", "⑲"};
-std::vector<std::string> nombre4 = {"⓿", "❶", "❷", "❸", "❹", "❺", "❻", "❼", "❽", "❾", "❿", "⓫", "⓬", "⓭", "⓮",
-                                    "⓯", "⓰", "⓱", "⓲", "⓳"};
 
-std::vector<std::vector<std::string>> typoChoix = {nombre0, nombre1, nombre2, nombre3, nombre4};
+std::vector<std::vector<std::string>> typoChoix = {nombre0, nombre1};
 
 std::string Uint::change_base(uint64_t base, uint64_t typo = 0) const {
-
     std::string resultat;
     Uint temp = *this;
     while (temp != 0) {
