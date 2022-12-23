@@ -305,17 +305,23 @@ auto gen_bit0_1 = std::bind(std::uniform_int_distribution<uint64_t>(0, 1), std::
 
 Uint Uint::genere_uint_aleatoire(const Uint &premier) {
     Uint resultat;
-    for (size_t i = premier.str.size() - 1; i != 0; --i) {
+    size_t taille = 0;
+    if (premier.str.size() > 8)
+        taille = 20;
+    else
+        taille = premier.str.size();
+
+    for (size_t i = taille - 1; i != 0; --i) {
         if (gen_bit0_1())
             resultat.str = "1" + resultat.str;
         else
             resultat.str = "0" + resultat.str;
     }
+    resultat.enleveZero();
     if (resultat == 0){
         resultat.str = "1";
         return resultat;
     }
-    resultat.enleveZero();
     return resultat;
 }
 

@@ -38,6 +38,7 @@ bool prime(Uint nombrePremier) {
 
     for (uint64_t i = 0; i != 10; i++) {
         Uint alea = Uint::genere_uint_aleatoire(nombrePremier);
+        //std::cout << " rand " << alea << std::endl;
 
         if (exponentiationModulaire(alea, nombrePremier - 1, nombrePremier) != (1 % nombrePremier))
             return false;

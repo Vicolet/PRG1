@@ -33,113 +33,118 @@ Uint factorielle(size_t n) {
 }
 
 int main() {
+//    Uint a(5);
+//    std::cout << std::boolalpha << prime(a);
+//
+//    Uint a;
+//    for (int i = 0; i < 100; ++i) {
+//        a = i;
+//        if (prime(a)) {
+//            std::cout << i << ", ";
+//        }
+//    }
 
-    Uint a(5);
-    std::cout << a << std::boolalpha << " " << prime(a);
+    clock_t start = clock();
 
-    //2 3 19 23 31 37 41 43 47 53 67 71 83 89 97
+    Uint a(10);
+    std::cout << "Constructeur avec size_t OK\n";
 
-    /*  clock_t start = clock();
+    Uint b;
+    std::cout << "Constructeur vide OK\n";
 
-      Uint a(10);
-      std::cout << "Constructeur avec size_t OK\n";
+    b = 3;
+    std::cout << "Affectation OK\n";
 
-      Uint b;
-      std::cout << "Constructeur vide OK\n";
+    const Uint c = 13;
+    std::cout << uint64_t(c) << " = 13: cast explicite vers uint64_t\n";
 
-      b = 3;
-      std::cout << "Affectation OK\n";
+    if (a < c)
+        std::cout << "Operateur < OK\n";
+    else
+        std::cout << "a < c : " << (a < c) << " pas bon!!!\n";
 
-      const Uint c = 13;
-      std::cout << uint64_t(c) << " = 13: cast explicite vers uint64_t\n";
+    b += a;
+    std::cout << "Operateur+=\n";
 
-      if (a < c)
-          std::cout << "Operateur < OK\n";
-      else
-          std::cout << "a < c : " << (a < c) << " pas bon!!!\n";
+    if (c == b)
+        std::cout << "Comparaison == OK\n";
+    else
+        std::cout << "c == b : " << (c == b) << " Operateur == ou += pas bon!!!\n";
 
-      b += a;
-      std::cout << "Operateur+=\n";
+    a = fibo(50);
+    std::cout << "fibo(50)\n";
 
-      if (c == b)
-          std::cout << "Comparaison == OK\n";
-      else
-          std::cout << "c == b : " << (c == b) << " Operateur == ou += pas bon!!!\n";
+    b = fibo(51);
+    const Uint d = fibo(52);
+    if (d == a + b)
+        std::cout << "Operateur+ OK\n";
+    else
+        std::cout << "+ ou == pas bon!!!\n";
 
-      a = fibo(50);
-      std::cout << "fibo(50)\n";
+    if (d - b != a)
+        std::cout << "- ou != pas bon!!!\n";
+    else
+        std::cout << "Operateur- OK\n";
 
-      b = fibo(51);
-      const Uint d = fibo(52);
-      if (d == a + b)
-          std::cout << "Operateur+ OK\n";
-      else
-          std::cout << "+ ou == pas bon!!!\n";
+    a = factorielle(50);
+    std::cout << "Factorielle\n";
 
-      if (d - b != a)
-          std::cout << "- ou != pas bon!!!\n";
-      else
-          std::cout << "Operateur- OK\n";
+    b = factorielle(51);
+    if (51 * a == b)
+        std::cout << "Operateur* et *= OK\n";
+    else
+        std::cout << "* ou *= ou == pas bon!!!\n";
 
-      a = factorielle(50);
-      std::cout << "Factorielle\n";
+    if (51 != b / a)
+        std::cout << "/ ou != pas bon!!!\n";
+    else
+        std::cout << "Operateur/ OK\n";
 
-      b = factorielle(51);
-      if (51 * a == b)
-          std::cout << "Operateur* et *= OK\n";
-      else
-          std::cout << "* ou *= ou == pas bon!!!\n";
+    std::cout << "51! en base 10 = " << b << std::endl;
 
-      if (51 != b / a)
-          std::cout << "/ ou != pas bon!!!\n";
-      else
-          std::cout << "Operateur/ OK\n";
+    //  Le modificateur set_base(...) n'affecte que la prochaine impression d'un Uint
+    std::cout << set_base(16) << "Modificateur d'impression Uint\n";
+    std::cout << "51! en base 16 = " << b << std::endl;
 
-      std::cout << "51! en base 10 = " << b << std::endl;
+    std::cout << "52e terme de la suite de Fibonacci, en base 10 = " << d << std::endl;
 
-      //  Le modificateur set_base(...) n'affecte que la prochaine impression d'un Uint
-      std::cout << set_base(16) << "Modificateur d'impression Uint\n";
-      std::cout << "51! en base 16 = " << b << std::endl;
+    a = 1;
+    a <<= 99;
+    std::cout << "Operateur <<=\n";
 
-      std::cout << "52e terme de la suite de Fibonacci, en base 10 = " << d << std::endl;
+    std::cout << "2 ^ 99 = " << a << std::endl;
 
-      a = 1;
-      a <<= 99;
-      std::cout << "Operateur <<=\n";
+    b = (Uint(1) << 100) - 1;
+    std::cout << "Operateur <<\n";
 
-      std::cout << "2 ^ 99 = " << a << std::endl;
+    // initialisation de le constante
+    const uint64_t LOWER_CASE = 1;
 
-      b = (Uint(1) << 100) - 1;
-      std::cout << "Operateur <<\n";
+    std::cout << set_base(16, LOWER_CASE);
+    std::cout << "2 ^ 100 - 1 (base 16, bas de casse) = " << b << std::endl;
 
-      // initialisation de le constante
-      const uint64_t LOWER_CASE = 1;
+    std::cout << "10 plus petits nombres premiers > 2^99\n";
+    size_t nb = 0;
+    while (nb < 10) {
+        if (prime(a)) {
+            std::cout << a << std::endl;
+            nb++;
+        }
+        ++a;
+    }
+    std::cout << "10 plus grands nombres premiers < 2^100\n";
+    nb = 0;
+    while (nb < 10) {
+        if (prime(b)) {
+            std::cout << b << std::endl;
+            nb++;
+        }
+        --b;
+    }
 
-      std::cout << set_base(16, LOWER_CASE);
-      std::cout << "2 ^ 100 - 1 (base 16, bas de casse) = " << b << std::endl;
+    clock_t end = clock();
+    double elapsed_time = (end - start) / (double) CLOCKS_PER_SEC * 1000;
+    std::cout << "Temps d'exécution : " << elapsed_time << " milliseconds" << std::endl;
 
-      std::cout << "10 plus petits nombres premiers > 2^99\n";
-      size_t nb = 0;
-      while (nb < 10) {
-          if (prime(a)) {
-              std::cout << a << std::endl;
-              nb++;
-          }
-          ++a;
-      }
-      std::cout << "10 plus grands nombres premiers < 2^100\n";
-      nb = 0;
-      while (nb < 10) {
-          if (prime(b)) {
-              std::cout << b << std::endl;
-              nb++;
-          }
-          --b;
-      }
-
-      clock_t end = clock();
-      double elapsed_time = (end - start) / (double) CLOCKS_PER_SEC * 1000;
-      std::cout << "Temps d'exécution : " << elapsed_time << " milliseconds" << std::endl;
-
-      return 0;*/
+    return 0;
 }
