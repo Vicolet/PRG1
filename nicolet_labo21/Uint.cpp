@@ -60,11 +60,13 @@ Uint &Uint::operator+=(const Uint &add) {
     int carry = 0;
 
     this->ajustement(temp);
+    somme.str.resize(temp.str.size(), '0');
 
     for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
         int terme1 = str[i] - '0', terme2 = temp.str[i] - '0';
         int res = terme1 + terme2 + carry;
-        somme.str = (res == 0 or res == 2) ? somme.str = "0" + somme.str : somme.str = "1" + somme.str;
+        //somme.str = (res == 0 or res == 2) ? somme.str = "0" + somme.str : somme.str = "1" + somme.str;
+        somme.str[i] = (res == 0 or res == 2) ? '0' : '1';
         carry = res > 1 ? 1 : 0;
     }
     if (carry == 1)
@@ -104,33 +106,12 @@ Uint &Uint::operator-=(const Uint &sub) {
 
 Uint &Uint::operator*=(const Uint &mul) {
     Uint produit = 0;
-    int multiple = 0;
+    size_t multiple = 0;
 
     if (str == "0" or mul.str == "0") {
         str = "0";
         return *this;
     }
-
-    //this->ajustement(temp);
-
-//    size_t grand, petit;
-//    Uint facteurPetit, facteurGrand;
-//    if (*this > temp) {
-//        petit = temp.str.size() - 1;
-//        grand = str.size() - 1;
-//        facteurPetit = temp;
-//        facteurGrand = *this;
-//    } else if (*this < temp) {
-//        petit = str.size() - 1;
-//        grand = temp.str.size() - 1;
-//        facteurPetit = *this;
-//        facteurGrand = temp;
-//    } else {
-//        grand = str.size() - 1;
-//        petit = grand;
-//        facteurPetit = *this;
-//        facteurGrand = temp;
-//    }
 
     for (size_t i = mul.str.size() - 1; i != SIZE_MAX; --i) {
         Uint tmp = *this;
@@ -140,19 +121,6 @@ Uint &Uint::operator*=(const Uint &mul) {
         }
         multiple++;
     }
-
-//    for (size_t i = petit; i != SIZE_MAX; --i) {
-//        Uint produitTemp;
-//        produitTemp.str.insert(0, multiple, '0');
-//        for (size_t j = grand; j != SIZE_MAX; --j) {
-//            int facteur1 = facteurGrand.str[j] - '0', facteur2 = facteurPetit.str[i] - '0';
-//            int res = facteur1 * facteur2;
-//            produitTemp.str = res ? "1" + produitTemp.str : "0" + produitTemp.str;
-//        }
-//        multiple++;
-//        produit += produitTemp;
-//    }
-
     return *this = produit;
 }
 
@@ -208,7 +176,7 @@ int Uint::operator<=>(const Uint &comparer) {
     else if (str.size() < comparer.str.size())
         return -1;
     else {
-        for (int i = 0; i < str.size(); i++) {
+        for (size_t i = 0; i < str.size(); i++) {
             if (str.at(i) < comparer.str.at(i))
                 return -1;
             else if (str.at(i) > comparer.str.at(i))
@@ -221,26 +189,6 @@ int Uint::operator<=>(const Uint &comparer) {
 bool Uint::operator==(const Uint &comparer) {
     return *this <=> comparer == 0;
 }
-
-//int operator<=>(const Uint &compare1, const Uint &compare2) {
-//    if (compare2.str.size() > compare1.str.size())
-//        return 1;
-//    else if (compare2.str.size() < compare1.str.size())
-//        return -1;
-//    else {
-//        for (size_t i = 0; i >= compare2.str.size() - 1; ++i) {
-//            if (compare2.str.at(i) < compare1.str.at(i))
-//                return -1;
-//            else if (compare2.str.at(i) > compare1.str.at(i))
-//                return 1;
-//        }
-//    }
-//    return 0;
-//}
-//
-//int operator==(const Uint &compare1, const Uint &compare2) {
-//    return compare1 <=> compare2 == 0;
-//}
 
 void Uint::ajustement(Uint &comparer) {
     if (str.size() < comparer.str.size())
@@ -331,7 +279,7 @@ auto gen_bit0_1 = std::bind(std::uniform_int_distribution<uint64_t>(0, 1), std::
 
 Uint Uint::genere_uint_aleatoire(const Uint &premier) {
     Uint resultat;
-    size_t taille = premier.str.size() -1;
+    size_t taille = premier.str.size() - 1;
     resultat.str.resize(taille, '0');
 
     for (size_t i = premier.str.size() - 1; i != 0; --i) {

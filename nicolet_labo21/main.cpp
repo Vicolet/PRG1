@@ -34,15 +34,14 @@ Uint factorielle(size_t n) {
 
 /*
  g++ -std=c++20 -g -O5 -Wall -Weffc++ -pedantic -pedantic-errors -Wextra -Wcast-align -Wcast-qual  -Wchar-subscripts  -Wcomment -Wconversion -Wdisabled-optimization -Wfloat-equal  -Wformat  -Wformat=2  -Wformat-nonliteral -Wformat-security  -Wformat-y2k -Wimport  -Winit-self  -Winvalid-pch   -Wunsafe-loop-optimizations  -Wmissing-braces -Wmissing-field-initializers -Wmissing-format-attribute   -Wmissing-include-dirs -Wmissing-noreturn -Wpacked  -Wparentheses  -Wpointer-arith -Wredundant-decls -Wreturn-type -Wsequence-point  -Wshadow -Wsign-compare  -Wsign-conversion -Wstack-protector -Wstrict-aliasing -Wstrict-aliasing=2 -Wswitch  -Wswitch-default -Wswitch-enum -Wtrigraphs  -Wuninitialized -Wunknown-pragmas  -Wunreachable-code -Wunused -Wunused-function  -Wunused-label  -Wunused-parameter -Wunused-value  -Wunused-variable  -Wvariadic-macros -Wvla -Wvolatile-register-var  -Wwrite-strings
- *
+
  */
 
 int main() {
 
-//    Uint a(5644), b(1644);
-//    Uint c = a * b;
-//    Uint d = b * a;
-//    std::cout << c << " " << d;
+//    Uint a(3), b(2);
+//    Uint c = a + b;
+//    std::cout << c;
 
 //    Uint b(128);
 //    for (int i = 0; i < 100; ++i) {
@@ -58,54 +57,56 @@ int main() {
 //    }
 
 
-//    Uint a(1313451), b(2341);
-//
-//    clock_t addStart = clock();
-//    for (int i = 0; i < 5000; ++i) {
-//        Uint c = a + b;
-//    }
-//
-//    clock_t addEnd = clock();
-//    double add = (addEnd - addStart) / (double) CLOCKS_PER_SEC * 1000000;
-//    std::cout << "Tim to + : " << add << " microseconde" << std::endl;
-//
-//    clock_t subStart = clock();
-//    for (int i = 0; i < 5000; ++i) {
-//        Uint c = a - b;
-//    }
-//
-//    clock_t subEnd = clock();
-//    double sub = (subEnd - subStart) / (double) CLOCKS_PER_SEC * 1000000;
-//    std::cout << "Tim to - : " << sub << " microseconde" << std::endl;
-//
-//    clock_t mulStart = clock();
-//    for (int i = 0; i < 5000; ++i) {
-//        Uint c = a * b;
-//    }
-//
-//    clock_t mulEnd = clock();
-//    double mul = (mulEnd - mulStart) / (double) CLOCKS_PER_SEC * 1000000;
-//    std::cout << "Tim to * : " << mul << " microseconde" << std::endl;
-//
-//    clock_t divStart = clock();
-//    for (int i = 0; i < 5000; ++i) {
-//        Uint c = a / b;
-//    }
-//
-//    clock_t divEnd = clock();
-//    double div = (divEnd - divStart) / (double) CLOCKS_PER_SEC * 1000000;
-//    std::cout << "Tim to / : " << div << " microseconde" << std::endl;
-//
-//    clock_t modStart = clock();
-//    for (int i = 0; i < 5000; ++i) {
-//        Uint c = a % b;
-//    }
-//
-//    clock_t modEnd = clock();
-//    double mod = (modEnd - modStart) / (double) CLOCKS_PER_SEC * 1000000;
-//    std::cout << "Tim to % : " << mod << " microseconde" << std::endl;
-//
+    Uint a(1313451), b(2341);
 
+    clock_t addStart = clock();
+    for (int i = 0; i < 5000; ++i) {
+        Uint c = a + b;
+    }
+
+    clock_t addEnd = clock();
+    double add = (addEnd - addStart) / (double) CLOCKS_PER_SEC * 1000000;
+    std::cout << "Tim to + : " << add << " microseconde" << std::endl;
+
+    clock_t subStart = clock();
+    for (int i = 0; i < 5000; ++i) {
+        Uint c = a - b;
+    }
+
+    clock_t subEnd = clock();
+    double sub = (subEnd - subStart) / (double) CLOCKS_PER_SEC * 1000000;
+    std::cout << "Tim to - : " << sub << " microseconde" << std::endl;
+
+    clock_t mulStart = clock();
+    for (int i = 0; i < 5000; ++i) {
+        Uint c = a * b;
+    }
+
+    clock_t mulEnd = clock();
+    double mul = (mulEnd - mulStart) / (double) CLOCKS_PER_SEC * 1000000;
+    std::cout << "Tim to * : " << mul << " microseconde" << std::endl;
+
+    clock_t divStart = clock();
+    for (int i = 0; i < 5000; ++i) {
+        Uint c = a / b;
+    }
+
+    clock_t divEnd = clock();
+    double div = (divEnd - divStart) / (double) CLOCKS_PER_SEC * 1000000;
+    std::cout << "Tim to / : " << div << " microseconde" << std::endl;
+
+    clock_t modStart = clock();
+    for (int i = 0; i < 5000; ++i) {
+        Uint c = a % b;
+    }
+
+    clock_t modEnd = clock();
+    double mod = (modEnd - modStart) / (double) CLOCKS_PER_SEC * 1000000;
+    std::cout << "Tim to % : " << mod << " microseconde" << std::endl;
+
+
+
+/*
     clock_t start = clock();
 
     Uint a(10);
@@ -209,4 +210,6 @@ int main() {
     std::cout << "Temps d'exécution : " << elapsed_time << " milliseconds" << std::endl;
 
     return 0;
+*/
+
 }
