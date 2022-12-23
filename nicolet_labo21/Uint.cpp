@@ -103,30 +103,56 @@ Uint &Uint::operator-=(const Uint &sub) {
 }
 
 Uint &Uint::operator*=(const Uint &mul) {
-    Uint produit;
-    Uint temp = mul;
+    Uint produit = 0;
     int multiple = 0;
 
-    if (str == "0" or temp.str == "0") {
+    if (str == "0" or mul.str == "0") {
         str = "0";
         return *this;
     }
 
-    this->ajustement(temp);
+    //this->ajustement(temp);
 
-    for (size_t i = str.size() - 1; i != SIZE_MAX; --i) {
-        Uint produitTemp;
-        produitTemp.str.insert(0, multiple, '0');
-        for (size_t j = str.size() - 1; j != SIZE_MAX; --j) {
-            int facteur1 = this->str[j] - '0', facteur2 = temp.str[i] - '0';
-            int res = facteur1 * facteur2;
-            produitTemp.str = res ? "1" + produitTemp.str : "0" + produitTemp.str;
+//    size_t grand, petit;
+//    Uint facteurPetit, facteurGrand;
+//    if (*this > temp) {
+//        petit = temp.str.size() - 1;
+//        grand = str.size() - 1;
+//        facteurPetit = temp;
+//        facteurGrand = *this;
+//    } else if (*this < temp) {
+//        petit = str.size() - 1;
+//        grand = temp.str.size() - 1;
+//        facteurPetit = *this;
+//        facteurGrand = temp;
+//    } else {
+//        grand = str.size() - 1;
+//        petit = grand;
+//        facteurPetit = *this;
+//        facteurGrand = temp;
+//    }
+
+    for (size_t i = mul.str.size() - 1; i != SIZE_MAX; --i) {
+        Uint tmp = *this;
+        if (mul.str[i] == '1') {
+            tmp.str.insert(tmp.str.end(), multiple, '0');
+            produit += tmp;
         }
         multiple++;
-        produit += produitTemp;
     }
 
-    produit.enleveZero();
+//    for (size_t i = petit; i != SIZE_MAX; --i) {
+//        Uint produitTemp;
+//        produitTemp.str.insert(0, multiple, '0');
+//        for (size_t j = grand; j != SIZE_MAX; --j) {
+//            int facteur1 = facteurGrand.str[j] - '0', facteur2 = facteurPetit.str[i] - '0';
+//            int res = facteur1 * facteur2;
+//            produitTemp.str = res ? "1" + produitTemp.str : "0" + produitTemp.str;
+//        }
+//        multiple++;
+//        produit += produitTemp;
+//    }
+
     return *this = produit;
 }
 
@@ -305,14 +331,11 @@ auto gen_bit0_1 = std::bind(std::uniform_int_distribution<uint64_t>(0, 1), std::
 
 Uint Uint::genere_uint_aleatoire(const Uint &premier) {
     Uint resultat;
-    resultat.str.resize(premier.str.size() - 1);
+    size_t taille = premier.str.size() -1;
+    resultat.str.resize(taille, '0');
 
     for (size_t i = premier.str.size() - 1; i != 0; --i) {
         resultat.str[i] = gen_bit0_1() ? '1' : '0';
-//        if (gen_bit0_1())
-//            resultat.str = "1" + resultat.str;
-//        else
-//            resultat.str = "0" + resultat.str;
     }
     resultat.enleveZero();
     if (resultat == 0) {

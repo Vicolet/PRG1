@@ -29,7 +29,7 @@ bool prime(Uint nombrePremier) {
     if (nombrePremier < 2) {
         return false;
     }
-    if (nombrePremier == 2) {
+    if (nombrePremier == 2 or nombrePremier == 3) {
         return true;
     }
 
