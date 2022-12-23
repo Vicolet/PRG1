@@ -51,19 +51,19 @@ build cmake_object_order_depends_target_nicolet_labo21: phony || CMakeFiles/nico
 
 build CMakeFiles/nicolet_labo21.dir/main.cpp.obj: CXX_COMPILER__nicolet_labo21_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo21/main.cpp || cmake_object_order_depends_target_nicolet_labo21
   DEP_FILE = CMakeFiles\nicolet_labo21.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\nicolet_labo21.dir
   OBJECT_FILE_DIR = CMakeFiles\nicolet_labo21.dir
 
 build CMakeFiles/nicolet_labo21.dir/Uint.cpp.obj: CXX_COMPILER__nicolet_labo21_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo21/Uint.cpp || cmake_object_order_depends_target_nicolet_labo21
   DEP_FILE = CMakeFiles\nicolet_labo21.dir\Uint.cpp.obj.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\nicolet_labo21.dir
   OBJECT_FILE_DIR = CMakeFiles\nicolet_labo21.dir
 
 build CMakeFiles/nicolet_labo21.dir/Prime.cpp.obj: CXX_COMPILER__nicolet_labo21_Debug C$:/Users/victo/OneDrive/Documents/OneDrive/HEIG-VD/2022-2023/PRG1/nicolet_labo21/Prime.cpp || cmake_object_order_depends_target_nicolet_labo21
   DEP_FILE = CMakeFiles\nicolet_labo21.dir\Prime.cpp.obj.d
-  FLAGS = -g -std=gnu++23
+  FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\nicolet_labo21.dir
   OBJECT_FILE_DIR = CMakeFiles\nicolet_labo21.dir
 

@@ -224,9 +224,9 @@ void Uint::ajustement(Uint &comparer) {
 }
 
 void Uint::enleveZero() {
-    if (str == "0"){
+    if (str == "0") {
         str = "0";
-    }else{
+    } else {
         this->str.erase(0, std::min(this->str.find_first_not_of('0'), this->str.size() - 1));
     }
 }
@@ -305,20 +305,17 @@ auto gen_bit0_1 = std::bind(std::uniform_int_distribution<uint64_t>(0, 1), std::
 
 Uint Uint::genere_uint_aleatoire(const Uint &premier) {
     Uint resultat;
-    size_t taille = 0;
-    if (premier.str.size() > 8)
-        taille = 20;
-    else
-        taille = premier.str.size();
+    resultat.str.resize(premier.str.size() - 1);
 
-    for (size_t i = taille - 1; i != 0; --i) {
-        if (gen_bit0_1())
-            resultat.str = "1" + resultat.str;
-        else
-            resultat.str = "0" + resultat.str;
+    for (size_t i = premier.str.size() - 1; i != 0; --i) {
+        resultat.str[i] = gen_bit0_1() ? '1' : '0';
+//        if (gen_bit0_1())
+//            resultat.str = "1" + resultat.str;
+//        else
+//            resultat.str = "0" + resultat.str;
     }
     resultat.enleveZero();
-    if (resultat == 0){
+    if (resultat == 0) {
         resultat.str = "1";
         return resultat;
     }
