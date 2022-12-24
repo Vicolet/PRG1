@@ -59,6 +59,7 @@ Uint &Uint::operator+=(const Uint &add) {
     Uint temp = add;
     int carry = 0;
 
+
     this->ajustement(temp);
     somme.str.resize(temp.str.size(), '0');
 
@@ -68,6 +69,7 @@ Uint &Uint::operator+=(const Uint &add) {
         somme.str[i] = (res == 0 or res == 2) ? '0' : '1';
         carry = res > 1 ? 1 : 0;
     }
+
     if (carry == 1)
         somme.str = "1" + somme.str;
 
@@ -105,22 +107,16 @@ Uint &Uint::operator-=(const Uint &sub) {
 
 Uint &Uint::operator*=(const Uint &mul) {
     Uint produit = 0;
-    size_t multiple = 0;
 
-    if (str == "0" or mul.str == "0") {
-        str = "0";
-        return *this;
-    }
+    if (str == "0" or mul.str == "0")
+        return *this = 0;
 
     for (size_t i = mul.str.size() - 1; i != SIZE_MAX; --i) {
-        Uint tmp = *this;
-        if (mul.str[i] == '1') {
-            //tmp.str.insert(tmp.str.end(), multiple, '0');
-            produit += tmp;
-        }
-        //multiple++;
-        tmp.str.push_back('0');
+        if (mul.str[i] == '1')
+            produit += *this;
+        str.push_back('0');
     }
+
     return *this = produit;
 }
 
@@ -208,47 +204,41 @@ void Uint::enleveZero() {
 void Uint::diviserReste(const Uint &div, Uint &quotient, Uint &reste) {
     Uint diviseur = div;
     Uint dividende = *this;
-//    Uint temp = quotient;
+    Uint temp = quotient;
 
-    if (dividende.str == "0") {
+    // Prise en compte de tous les cas spéciaux.
+    if (str == "0") {
         quotient.str = "erreur";
         return;
-    } else if (diviseur > dividende) {
-        reste = dividende;
+    } else if (div > *this) {
+        reste = *this;
         quotient.str = "0";
         return;
-    } else if (diviseur.str == "1") {
+    } else if (div.str == "1") {
         reste.str = "0";
-        quotient = dividende;
+        quotient = *this;
         return;
     }
 
     diviseur.str.append(dividende.str.size() - diviseur.str.size(), '0');
-//    temp.str.resize(this->str.size(), '0');
-
-//    size_t sup = temp.str.size();
-//    for (size_t i = 0; !(diviseur < div); ++i) {
-//        if ((dividende - diviseur).str != "erreur") {
-//            temp.str[i] = '1';
-//            dividende -= diviseur;
-//        } else {
-//            temp.str[i] = '0';
-//        }
-//        sup--;
-//        diviseur.str.pop_back();
-//    }
+    size_t sup = str.size();
+    temp.str.resize(sup, '0');
 
 
-    while (!(diviseur < div)) {
+    for (size_t i = 0; !(diviseur < div); ++i) {
         if ((dividende - diviseur).str != "erreur") {
-            quotient.str = quotient.str + '1';
+            temp.str[i] = '1';
             dividende -= diviseur;
         } else {
-            quotient.str = quotient.str + '0';
+            temp.str[i] = '0';
         }
         diviseur.str.pop_back();
+        sup--;
     }
-    quotient.enleveZero();
+
+    temp.str.erase(temp.str.size() - sup, sup);
+    temp.enleveZero();
+    quotient.str = temp.str;
     reste = dividende;
 }
 
